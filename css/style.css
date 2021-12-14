@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+ul {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 98%;
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  gap: 4rem;
+}
+
+ul a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+ul a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.container-snap {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10rem;
+}
+
+
+.footer-snap {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-nemskat {
+  background-color: #F7F7F5;
+}
+  
+.h1-nemskat  {
+  color: #72c27c;
+  font-size: calc(1rem + 3vw);
+}
+
+.section-balletbornene {
+  background-color: #FCF4F3;
+}
+  
+.h1-balletbornene  {
+  color: #00566D;
+  font-size: calc(1rem + 3vw);
+}
+
+.section-howtodate {
+  background-color: #F7F7F7;
+}
+  
+.h1-howtodate  {
+  color: #B52323;
+  font-size: calc(1rem + 3vw);
+}
+
+.section-bollywolly {
+  background-color: #EEF0E6;
+}
+
+.h1-bollywolly  {
+  color: #6F173D;
+  font-size: calc(1rem + 3vw);
+}
+
+.section-ozone {
+  background-color: #EBEBEB;
+}
+
+.h1-ozone   {
+  color: #0F1A53;
+  font-size: calc(1rem + 3vw);
+}
