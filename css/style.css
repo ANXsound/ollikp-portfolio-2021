@@ -1,16 +1,198 @@
 * {
+  /* Fixer browsers default margin */
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+:root {
+  /* Her er mine CSS Variables. De kan ændres for at påvirke en masse af min styling på samme tid */
+  --font-main: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+  --font-bold: 700;
+  --font-italic: italic;
+  --primary-dark: #1A231D;
+  --soft-dark: #443F3F;
+  --primary-light: #E5E5E5;
+  --thirdcolour: #fff;
+  --rounded: 10px;
+
+  --primary-color: #1A231D;
+  --overlay-color: #1A231D;
+  --menu-speed: 0.75s;
+}
+
 html {
-  font-family: sans-serif;
+  /* Globale settings for min html og scroll snap */
+  font-family: var(--font-main);
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
 }
-ul {
+/* ------------------- Burgermenu & Navbar ------------------- */
+
+/* Jeg har tilpasset følgende skript til at passe i min portefølje
+https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
+
+/* MENU STYLES */
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 60px;
+}
+
+.my-logo {
+  font-family: var(--font-main);
+  font-weight: var(--font-bold);
+  font-size: 40px;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+
+.my-logo-a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  /* Gennemsigtighed & animation på links */
+  opacity: 1;
+  transition:  opacity 0.2s ease 0.2s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: var(--overlay-color);
+  border-radius: 100%;
+  width: 200vw;
+  height: 200vh;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+/* ul {
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -34,18 +216,21 @@ ul a {
 ul a:hover {
   background: #ddd;
   color: black;
-}
+} */
+
+
+/* ------------------- Sections ------------------- */
 
 .container-snap {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
   display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 10rem;
 }
 
+.center-horizontal {
+  justify-content: center;
+}
 
 .footer-snap {
   height: 100vh;
@@ -56,46 +241,91 @@ ul a:hover {
   justify-content: center;
 }
 
+/* ------------------- Index Sections ------------------- */
+
+.background-index {
+  background: #fff;
+  background: linear-gradient(180deg, rgba(229,229,229,1) 0%, rgba(229,229,229,1) 54%, rgba(181,181,181,0.4298850574712644) 90%, rgba(115,115,115,0.78) 100%);
+}
+
+.heading-index {
+  width: 90vw;
+  height: 27vh;
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid var(--soft-dark);
+
+}
+.h3-index {
+  font-family: var(--font-main);
+  font-weight: var(--font-bold);
+  font-size: 35px;
+  margin-top: 10rem;
+  border-bottom: 4px slateblue;
+}
+
+.content-index {
+  margin-top: 2.2rem;
+  background-color: yellow;
+  width: 90vw;
+  height: 57vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-container-index {
+  background-color: violet;
+  width: 29%;
+  border-radius: var(--rounded);
+}
+
+.zealand-img-index {
+  max-height:100%;
+  object-fit: contain;
+}
+
+/* ------------------- Zealand 21/22 Sections ------------------- */
+
+/* NemSkat */
 .section-nemskat {
   background-color: #F7F7F5;
-}
-  
+} 
 .h1-nemskat  {
   color: #72c27c;
   font-size: calc(1rem + 3vw);
 }
 
+/* Balletbørnene */
 .section-balletbornene {
   background-color: #FCF4F3;
-}
-  
+} 
 .h1-balletbornene  {
   color: #00566D;
   font-size: calc(1rem + 3vw);
 }
 
+/* How To Date */
 .section-howtodate {
   background-color: #F7F7F7;
-}
-  
+} 
 .h1-howtodate  {
   color: #B52323;
   font-size: calc(1rem + 3vw);
 }
 
+/* BollyWolly */
 .section-bollywolly {
   background-color: #EEF0E6;
 }
-
 .h1-bollywolly  {
   color: #6F173D;
   font-size: calc(1rem + 3vw);
 }
 
+/* O-zone */
 .section-ozone {
   background-color: #EBEBEB;
 }
-
 .h1-ozone   {
   color: #0F1A53;
   font-size: calc(1rem + 3vw);
