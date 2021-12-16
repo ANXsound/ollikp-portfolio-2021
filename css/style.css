@@ -38,6 +38,7 @@ a {
   /* Fjerner understreg og skift af farve på links */
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 /* ------------------- Burgermenu & Navbar ------------------- */
@@ -237,6 +238,14 @@ ul a:hover {
 .center-horizontal {
   margin-left: auto;
   margin-right: auto;
+}
+
+.dark-text {
+  color: var(--primary-dark);
+}
+
+.light-text {
+  color: var(--primary-light);
 }
 
 /* ------------------- Index ------------------- */
@@ -584,11 +593,150 @@ ul a:hover {
   height: auto;  
 }
 
+/* ------------------- Music ------------------- */
+
+.section-music-spacerush {
+  background-color: var(--primary-light);
+  padding-top: 1rem;
+}
+
+.music-container {
+  margin-top: 8.5rem;
+  width: 90wv;
+  height: 70vh;
+}
+
+.logo-space-dark {
+  width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-bottom: 5px solid var(--soft-dark);
+  padding-bottom: 0.6rem;
+}
+
+.h1-music {
+  text-align: center;
+  font-family: var(--font-main);
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.h1-releases {
+  padding-top: 0.3rem;
+}
+
+.h1-anx-releases {
+  padding-top: 0.3rem;
+  border-top: 5px solid var(--primary-light);
+  margin-inline: 4rem;
+}
+
+.iframe-spacerush {
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.iframe-anx {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.section-music-anx {
+  background-color: var(--primary-dark);
+  padding-top: 1rem;
+}
+
+.logo-anx-dark {
+  width: 170px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 0.6rem;
+}
+
+.h1-support {
+  font-size: 2.2rem;
+  border-bottom: 5px solid var(--soft-dark);
+  margin-inline: 2rem;
+  margin-top: 7rem;
+}
+
+.h2-support {
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: var(--font-italic);
+  text-align: center;
+  justify-content: center;
+}
+
+.grid-container-support {
+  display: grid;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-inline: rem;
+  row-gap: 1.5rem;
+  margin-bottom: 3.3rem;
+  grid-template-columns: auto auto;
+  /* background-color: #2196F3; */
+  /* ^^background color til grid for placering */
+}
+
+.grid-box-support-big {
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  /* ^^background color til grid-felter for placering */
+  width: 5.5rem;
+  height: 7.5rem;
+  border-radius: var(--rounded);
+  text-align: center;
+  
+}
+
+.grid-box-support {
+  background-color: rgba(0, 255, 21, 0);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  /* ^^background color til grid-felter for placering */
+  width: 100%;
+  height: 70%;
+  border-radius: var(--rounded);
+}
+
+.artist-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--rounded);
+}
+
+.h1-mandellermus {
+  border-bottom: 5px solid var(--primary-light);
+  font-size: 1.5rem;
+  margin-inline: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.h2-mandellermus {
+  font-weight: 400;
+  font-style: var(--font-italic);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-inline: 3rem;
+  margin-top: 4.8rem;
+  padding-bottom: 0.5rem;
+}
+
 /* ------------------- About Me ------------------- */
 
-.section-portrait {
-  background-color: var(--primary-light);
-}
 
 .h2-myname {
   font-family: var(--font-main);
