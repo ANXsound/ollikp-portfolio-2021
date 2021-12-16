@@ -13,9 +13,11 @@
   --primary-dark: #1A231D;
   --soft-dark: #443F3F;
   --primary-light: #E5E5E5;
+  --soft-light: #9EA19F;
   --thirdcolour: #fff;
   --rounded: 10px;
   --rounded-button: 23px;
+  --box-shadow: 6px 6px 20px 0px rgba(26,35,29,0.6);
 
   --primary-color: #1A231D;
   --overlay-color: #1A231D;
@@ -274,7 +276,7 @@ ul a:hover {
   border-radius: var(--rounded);
   position: relative;
   color: white;
-  
+  box-shadow: var(--box-shadow);
 }
 
 .zealand-img-index {
@@ -284,13 +286,14 @@ ul a:hover {
   object-fit: cover;
   display: block;
   border-radius: var(--rounded);
+
 }
 
 .shadow {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: var(--rounded);
   top: 0;
   left: 0;
   box-shadow: inset 60px 0px 20px 1px rgba(26,35,29,0.8);
@@ -579,6 +582,176 @@ ul a:hover {
   width: 140%;
   margin-left: -6rem;
   height: auto;  
+}
+
+/* ------------------- About Me ------------------- */
+
+.section-portrait {
+  background-color: var(--primary-light);
+}
+
+.h2-myname {
+  font-family: var(--font-main);
+  font-style: var(--font-italic);
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--primary-dark);
+  padding-top: 6.8rem;
+  text-align: center;
+}
+
+.img-oliver-container {
+  margin-top: 1rem;
+  position: relative;
+  width: 58%;
+  height: 26%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: var(--rounded);
+  box-shadow: var(--box-shadow);
+}
+
+.img-oliver {
+  transform: scaleX(-1);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: 100% 10%;
+  border-radius: var(--rounded);
+}
+
+.h2-hello {
+  font-style: var(--font-italic);
+  font-weight: 400;
+  font-size: 1.9em;
+  color: var(--primary-dark);
+  margin-top: 2.2rem;
+  padding-left: 2.5rem;
+  padding-bottom: 0.2rem;
+}
+
+.h2-text-intro {
+  font-style: var(--font-italic);
+  font-weight: 400;
+  font-size: 1.65em;
+  padding-bottom: 1.4rem;
+}
+
+.p-aboutme {
+  font-family: var(--font-main);
+  font-weight: 400;
+  padding-right: 0.9rem;
+  font-size: 1.06rem;
+}
+
+.p-titles {
+  font-style: var(--font-italic);
+  font-weight: var(--font-bold);
+}
+
+.p-groups {
+  font-weight: var(--font-bold);
+  font-size: 1.65rem;
+  text-transform: uppercase;
+}
+
+.aboutme-text-container {
+  font-family: var(--font-main);
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+  border-radius: var(--rounded);
+  margin-inline: 1.6rem;
+  height: 41vh;
+  padding-left: 1rem;
+  padding-right: 1.2rem;
+  padding-block: 0.4rem;
+  position: relative;
+}
+
+.img-green-alien {
+  width: 65px;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 1rem;
+}
+
+.section-cv {
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+}
+
+.h1-cv {
+  font-family: var(--font-main);
+  font-weight: var(--font-bold);
+  padding-top: 7.6rem;
+  font-size: 1.8rem;
+  text-align: center;
+  border-bottom: 5px solid var(--soft-light);
+  margin-inline: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.cv-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
+  height: 68vh;
+  width: 88vw;
+  margin-inline: auto;
+  
+}
+
+.cv-box {
+  background-color: var(--primary-light);
+  height: 22.5%;
+  width: 88vw;
+  border-radius: var(--rounded);
+  border: 1px solid #707070;
+  padding: 1rem;
+}
+
+.text-fat {
+  font-weight: var(--font-bold);
+}
+
+.h2-cv {
+  font-family: var(--font-main);
+  font-weight: 400;
+  color: var(--primary-dark);
+  font-size: 1.4rem;
+}
+
+.h2-cv-multimedia {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.h2-cv-hhx {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.h3-cv {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-style: var(--font-italic);
+  color: var(--primary-dark);
+  font-size: 0.9rem;
+  padding-right: 5rem;
+  line-height: 1.4rem;
+}
+
+.p-cv {
+  font-family: var(--font-main);
+  font-weight: 400;
+  color: var(--primary-dark);
+  font-size: 0.8rem;
+  padding-top: 0.4rem;
 }
 
 /* ------------------- Footer ------------------- */
