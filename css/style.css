@@ -19,8 +19,6 @@
   --rounded-button: 23px;
   --box-shadow: 6px 6px 20px 0px rgba(26,35,29,0.6);
 
-  --primary-color: #1A231D;
-  --overlay-color: #1A231D;
   --menu-speed: 0.75s;
 }
 
@@ -84,7 +82,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   width: 60px;
   height: 60px;
   padding: 1rem;
-  background: var(--primary-color);
+  background: var(--primary-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,7 +165,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 }
 
 .menu-wrap .menu > div {
-  background: var(--overlay-color);
+  background: var(--primary-dark);
   border-radius: 100%;
   width: 200vw;
   height: 200vh;
@@ -295,7 +293,6 @@ ul a:hover {
   object-fit: cover;
   display: block;
   border-radius: var(--rounded);
-
 }
 
 .shadow {
@@ -308,7 +305,7 @@ ul a:hover {
   box-shadow: inset 60px 0px 20px 1px rgba(26,35,29,0.8);
 }
 
-.h1-index {
+.h2-index {
   font-family: var(--font-main);
   font-style: var(--font-italic);
   font-weight: 400;
@@ -351,7 +348,8 @@ ul a:hover {
   font-size: 17px;
   text-transform: uppercase; 
   box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.16);
-    cursor:pointer;
+  cursor:pointer;
+  font-weight: 400;
 }
 
 .icon-index {
@@ -391,6 +389,10 @@ ul a:hover {
 .h1-nemskat  {
   color: #72c27c;
   font-size: 51px;
+}
+
+.skat-color {
+  color: #3A3244;
 }
 
 .p-nemskat {
@@ -490,11 +492,13 @@ ul a:hover {
 .btn-video {
   color: #fff;
   background-color: #1E222C;
-  padding-block: 0.75rem;
+  padding: 0.8rem;
+  padding-inline: 1.7rem;
 }
 
 .icon-video {
-  width: 30%;
+  width: 13%;
+  height: auto;
 }
 
 .section-video-visual {
@@ -663,7 +667,7 @@ ul a:hover {
   color: var(--primary-light);
 }
 
-.h1-visual-category{
+.h2-visual-category{
   font-family: var(--font-main);
   font-weight: var(--font-bold);
   font-size: 2.3rem;
@@ -671,7 +675,7 @@ ul a:hover {
   text-align: center;
 }
 
-.h1-insta{
+.h2-insta{
   padding-top: 1rem;
 }
 
@@ -769,7 +773,7 @@ ul a:hover {
   padding-bottom: 0.6rem;
 }
 
-.h1-music {
+.h2-music {
   text-align: center;
   font-family: var(--font-main);
   font-weight: var(--font-bold);
@@ -777,11 +781,11 @@ ul a:hover {
   font-size: 1.8rem;
 }
 
-.h1-releases {
+.h2-releases {
   padding-top: 0.3rem;
 }
 
-.h1-anx-releases {
+.h2-anx-releases {
   padding-top: 0.3rem;
   border-top: 5px solid var(--primary-light);
   margin-inline: 4rem;
@@ -792,6 +796,9 @@ ul a:hover {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  width: 90vw; 
+  height: 40vh;
+  border-radius: var(--rounded);
 }
 
 .iframe-anx {
@@ -799,6 +806,9 @@ ul a:hover {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  width: 90vw; 
+  height: 40vh;
+  border-radius: var(--rounded);
 }
 
 .section-music-anx {
@@ -815,14 +825,14 @@ ul a:hover {
   padding-bottom: 0.6rem;
 }
 
-.h1-support {
+.h2-support {
   font-size: 2.2rem;
   border-bottom: 5px solid var(--soft-dark);
   margin-inline: 2rem;
   margin-top: 7rem;
 }
 
-.h2-support {
+.h3-support {
   font-size: 0.85rem;
   font-weight: 400;
   font-style: var(--font-italic);
@@ -870,7 +880,7 @@ ul a:hover {
   border-radius: var(--rounded);
 }
 
-.h1-mandellermus {
+.h2-mandellermus {
   border-bottom: 5px solid var(--primary-light);
   font-size: 1.5rem;
   margin-inline: 3rem;
@@ -878,7 +888,7 @@ ul a:hover {
   padding-bottom: 0.5rem;
 }
 
-.h2-mandellermus {
+.h3-mandellermus {
   font-weight: 400;
   font-style: var(--font-italic);
   font-size: 1.2rem;
@@ -886,6 +896,15 @@ ul a:hover {
   margin-inline: 3rem;
   margin-top: 4.8rem;
   padding-bottom: 0.5rem;
+}
+
+.iframe-mus {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%; 
+  height: 232px;
+  border: 0;
 }
 
 /* ------------------- About Me ------------------- */

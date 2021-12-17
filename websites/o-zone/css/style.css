@@ -1,0 +1,171 @@
+/* style.css */
+
+
+/* --- GLOBALE VÆRDIER --- */
+    
+    * {   /*  <-- Denne stjerne "*" betyder "alle elementer" - Det der sker her er, at [alt] på siden bliver påvirket og får tildelt nedenstående data */
+        margin: 0;   /* Fjerner standardmargin browseren tildeler */
+        padding: 0;   /* Fjerner standard"padding" browseren tildeler */
+        box-sizing: border-box;    /* "Boks-modellen" - Google it */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Visual Studio fontsæt */
+        color: white;   /* Fiks farve på tekst og den slags - nu når baggrunden for det meste er sort */
+    }
+
+/* ------------------------ */
+
+
+
+/* --- HEADER OG NAVIGATION --- */
+
+    body {
+        background-image: url("../img/bg.jpg");
+        background-color: black;    /* Indstiller baggrundsfarve på den allerbagerste kasse - så fungerer det lidt som en baggrundsfarve */
+    }
+
+    header {
+        height: 100vh;   /* vh = "viewport height", altså 100% af browservinduets højde. Næsten det samme som %, men alligevel ikke... */
+        min-height: 400px;    /* Minimumshøjde - Hvorfor? For mobilvenlighedens skyld :) */
+        background-image: url("../img/banner.jpg");
+        background-position: top;   /* Juster baggrunden, så den flugter med den øverste del af billedet, og det nederst kan blive skåret af */
+        background-size: cover;  /* "cover" hele kassen, så billedet bliver fyldt helt ud (proportionelt) */
+        background-repeat: no-repeat;  /* Dette gør så baggrunden ikke gentages som "fliser" (lidt ala. Windows 95 wallpapers) */
+    }
+
+    header nav {
+        padding: 0 10%;   /* Nem måde at indsnævre nav på, så det flugter "nogenlunde" med banneret */
+        padding-top: 85vh;   /* Nem måde at skuppe nav ned på */     /* vh = "viewport height" - pixels fungerer også*/
+        min-height: 1000px;  /* (Så nav ikke stikker af, nu når headeren har en min-height) */
+    }
+
+    header nav ul {
+        max-width: 700px;   /* Tilladt maksbredde i pixels */
+        float: right;   /* Få indhold til at "flyde" så langt til højre som muligt */
+        display: flex;  /* "Flexbox" - bruges til at ombryde elementer, der ligger inde i denne "kasse" */
+        flex-wrap: wrap;  /* Tillader en "flexbox" at ombryde sig selv til en ny linje, hvis der mangler plads på siden */
+        list-style-type: none;  /* Fjerner listepunkter */
+    }
+
+    header nav ul li {
+        margin: 0 auto;  /* Centrér kasse */
+        padding: 0 10px;    /* Så knapperne i <nav> ikke står for tæt sammen på mobilversionen */
+    }
+
+    header nav ul li a {
+        font-size: 1.9em;   /* em = relativt ift. standardstørrelse - Tekst på mobilenheder er altid markant større end på PC, og "2 em" er lig med "2x standardstørrelse". Pixels (px) har en fast størrelse og justeres ikke på tværs af enheder */
+        font-weight: 700;   /* Går teksten "tykkere" (eller federe - ergo 'weight') - kan ligge mellem 100-900 (afhængig af skrifttypen) */
+    }
+
+/* ---------------------------- */
+
+
+
+/* --- INTRO ARTICLE AND BOOKING PLACEHOLDER --- */
+
+    main {
+        width: 90%;   /* Begrænser bredden så teksten ikke flyder helt ud til kanten af skærmen */
+        margin: 0 auto;    /* Centrér kassen */
+        margin-top: 50px;     /* Får tekstfeltet til at krybe sig op over billedet */
+    }
+
+    article {
+        max-width: 1000px;  /* Maksbredde gør siden mere læselig */
+        margin: 0 auto;    /* Centrér kassen */
+        padding: 40px;  /* Padding giver lidt luft mellem "boksens kant" og selve teksten */
+        background-color: #38498A;
+    }
+
+    article h1 {
+        font-size: 2.4em;   /* em = relativt ift. standardstørrelse */
+    }
+
+    article p {
+        max-width: 720px;   /* Begrænser maksbredden på et tekstfelt, så teksten er mere læselig */
+        font-size: 1.2em;   /* em = relativt ift. standardstørrelse - Tekst på mobilenheder er altid markant større end på PC, og "2 em" er lig med "2x standardstørrelse". Pixels (px) har en fast størrelse og justeres ikke på tværs af enheder */
+        margin-top: 14px;     /* Keeps paragraphs a little distant from eachother */
+    }
+
+    article ul {
+        font-size: 1.2em;
+        padding-left: 40px;   /* Fiks placeringen af lister i articles */
+    }
+
+    .booking {
+        max-width: 1000px;  /* Hold bredden identisk med artiklerne */
+        margin: 0 auto;   /* Centrér kassen */
+    }
+
+    .booking h2 {
+        font-size: 2.6em;   /* Gør H2 ca. samme størrelse som H1 */
+        margin-top: 60px;
+        margin-bottom: 15px;
+        text-align: center;   /* Centrér tekst (virker også med billeder) */
+    }
+
+/* ---------------------------------------- */
+
+
+
+/* --- FACTS (FAKTABOKSE) --- */
+
+    /* Når man skal definere en "class" i CSS starter man ud med et punktum. Altså: <div class="test"> bliver så til ".test" i CSS-dokumentet.
+       Man kan ikke bare skrive "test" (uden punktum) - man er nødt til at informere browseren om, at det er en "class" vi vil henvise til */
+
+        .facts {
+            width: 90%;
+            margin: 0 auto;   /* Centrér kasse */
+            margin-top: 120px;
+            margin-bottom: 120px;
+            display: flex;  /* Slå "flexbox" til - Google it */
+            justify-content: center;    /* Bruges til at centrere elementer i "flexbokse" - de er lidt noget for sig selv, så "margin: 0 auto" dutter ikke her */
+            flex-wrap: wrap;   /* Tillader elementer at springe nedad, hvis der mangler plads på skærmen */
+        }
+    
+       .facts .item {
+            border-radius: 500px;   /* Laver kassen om til en cirkel - "Fjerner kanterne" so to speak */
+            background-color: #38498A;
+            width: 280px;
+            height: 280px;
+            margin: 7px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .facts .item h3 {
+            font-size: 6em;
+            font-weight: 100;   /* Gør så H3 ikke er lige så "fed" - tal mellem 100 og 900 kan bruges */
+        }
+
+/* -------------------------- */
+
+
+
+/* --- FAQ SECTION (SPØRGSMÅL OG SVAR) --- */
+
+        .faq {
+            margin: 0 auto;    /* Centrér kasse */
+        }
+
+        .faq b {
+            font-size: 1.6em;
+        }
+
+        .faq p {
+            padding-left: 30px;
+            margin-bottom: 20px;
+            margin-top: 0;  /* Fordi der er markin-top på "article p" der laver ballade hernede */
+        }
+
+/* --------------------------------------- */
+
+
+
+/* --- FOOTER --- */
+
+    footer {
+        margin-top: 120px;
+        background-color: #38498A;
+        padding: 8px;
+        text-align: center;    /* Centrér tekst (virker også med billeder) */
+    }
+
+/* -------------- */

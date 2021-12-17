@@ -1,0 +1,91 @@
+
+* {   
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+/* HEADER OG NAVIGATION */
+nav {
+    padding-top: 10px;
+    background: rgb(50, 56, 140);
+    /* background: linear-gradient(90deg, rgb(50, 40, 145, 0.60) 0%, rgba(0, 0, 0) 55%, rgb(50, 40, 145, 0.60) 100%); */
+    border-bottom: solid;
+    text-shadow: 4px 2px black;
+}   
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li a {   /* Teksten i navigationen */
+    font-size: 30px;
+    padding-left: 143px;
+    padding-right: 143px;
+    text-decoration: none;
+    }
+    
+body {background-image: url('../img/bg.jpg');
+}
+}
+
+
+
+
+/* TEKSTOMRÅDE */
+main{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 0, 0);
+}
+section {
+    width: 58%;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(50, 40, 145, 0.60) 55%, rgb(0, 0, 0) 100%);
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: -8px;
+}
+
+p {
+    font-size: 30px;
+    text-shadow: 4px 2px black;
+    margin-left: auto;
+    border: solid;
+}
+.bigbangbar, .cosmiccasino, .infinityclub, .x-perience{
+    position: relative;
+    
+}
+
+h4{position: absolute;
+    top: 3%;
+    width: 99%;
+    font-size: 135px;
+    font-weight: 900;
+    letter-spacing: -6px;
+    text-shadow: 10px 2px black;
+    -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+main img, section img {
+    width: 99.2%;
+    border: solid;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    border-top: solid;
+    background-color: rgb(50, 56, 140);
+}
