@@ -1131,3 +1131,41 @@ footer {
   width: 75px;
   height: auto;
 }
+
+/* ------------------- MEDIA QUERY ------------------- */
+
+@media only screen and (max-width: 600px) {
+  
+  /* ------------------- Index ------------------- */
+
+  .background-index {
+    
+  }
+
+  .heading-index {
+    
+  }
+  .h3-index {
+    
+  }
+
+  .content-index {
+    
+  }
+
+  .img-container-index {
+    
+  }
+
+  .zealand-img-index {
+    
+  }
+
+  .shadow {
+    
+  }
+
+  .h2-index {
+    
+  }
+}
