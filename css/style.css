@@ -11,13 +11,13 @@
   --font-bold: 700;
   --font-italic: italic;
   --primary-dark: #1A231D;
-  --soft-dark: #443F3F;
+  --soft-dark: #443f3f;
   --primary-light: #E5E5E5;
   --soft-light: #9EA19F;
   --thirdcolour: #fff;
   --rounded: 10px;
   --rounded-button: 23px;
-  --box-shadow: 6px 6px 20px 0px rgba(26,35,29,0.6);
+  --box-shadow: 6px 6px 10px 0px rgba(26,35,29,0.8);
 
   --menu-speed: 0.75s;
 }
@@ -41,6 +41,10 @@ a {
 
 /* ------------------- Burgermenu & Navbar ------------------- */
 
+.desktop-nav {
+  display: none;
+}
+
 /* Jeg har tilpasset følgende skript til at passe i min portefølje
 https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 
@@ -61,6 +65,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   padding-left: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.2rem;
+  position: fixed;
 }
 
 .menu-wrap .toggler {
@@ -166,15 +171,15 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 
 .menu-wrap .menu > div {
   background: var(--primary-dark);
-  border-radius: 100%;
+  border-radius: 50%;
   width: 200vw;
   height: 200vh;
   display: flex;
   flex: none;
   align-items: center;
   justify-content: center;
-  transform: scale(0);
-  transition: all 0.4s ease;
+  transform: scaleX(0);
+  transition: all 0.4 ease;
 }
 
 .menu-wrap .menu > div > div {
@@ -197,33 +202,6 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   text-decoration: none;
   transition: color 0.4s ease;
 }
-
-/* ul {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 98%;
-  list-style-type: none;
-  display: flex;
-  justify-content: end;
-  gap: 4rem;
-}
-
-ul a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-ul a:hover {
-  background: #ddd;
-  color: black;
-} */
-
 
 /* ------------------- Utility ------------------- */
 
@@ -259,12 +237,12 @@ ul a:hover {
   display: flex;
   justify-content: center;
   border-bottom: 5px solid var(--soft-dark);
-
 }
+
 .h3-index {
   font-family: var(--font-main);
   font-weight: var(--font-bold);
-  font-size: 35px;
+  font-size: 45px;
   margin-top: 10rem;
   border-bottom: 4px slateblue;
 }
@@ -1134,27 +1112,87 @@ footer {
 
 /* ------------------- MEDIA QUERY ------------------- */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   
+  /* ------------------- Navbar ------------------- */
+
+  .menu-wrap {
+    display: none;
+  }
+
+  .show-dektop {
+    display: block;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .my-logo {
+    padding-top: 1.2rem;
+    padding-left: 3rem;
+    z-index: 1;
+  }
+
+  .my-logo:hover{
+    transform: scale(1.1);
+  }
+
+  ul {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  gap: 4rem;
+  padding: 1rem;
+  padding-right: 3rem;
+  border-bottom: 5px solid #9ea19f9a;
+}
+
+ul a {
+  float: left;
+  display: block;
+  color: var(--primary-dark)
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+ul a:hover {
+  transform: scale(1.1);
+}
+
+.current-page {
+  background: var(--primary-dark);
+  color: var(--primary-light);
+  border-radius: var(--rounded-button);
+}
+
+
+
+
   /* ------------------- Index ------------------- */
 
-  .background-index {
-    
+  .heading-index {
+    border-bottom: 0px solid var(--soft-dark);
   }
 
-  .heading-index {
-    
-  }
   .h3-index {
-    
+    font-size: 5rem;
+    border-bottom: 5px solid var(--soft-dark);
+
   }
 
   .content-index {
-    
+    width: 70vw;
   }
 
   .img-container-index {
-    
+    width: 26%;
   }
 
   .zealand-img-index {
@@ -1162,10 +1200,11 @@ footer {
   }
 
   .shadow {
-    
+    box-shadow: inset 80px 0px 20px 1px rgba(26,35,29,0.8);
   }
 
   .h2-index {
-    
+    font-size: 3.8rem;
+    left: 4.5rem;
   }
 }
