@@ -1,0 +1,35 @@
+body{
+    background-color: var(--creamy-white);
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+
+h1{
+	text-align: center;
+	font-size: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+.anmeldelser-img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.trust{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.footer2{
+	background-color: #72C27C;
+	display: block;
+	text-align: center;
+	padding: 27px;
+}
+
+
+
+
+

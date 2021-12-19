@@ -1,0 +1,573 @@
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --font-1: Arial, Helvetica, sans-serif;
+        --creamy-white: #F5F5F2;
+        --dark-grey: #3A3244;
+        --main-green: #72C27C;
+        --white: #fff;
+        --rounded: 36px;
+    }
+
+    
+    body {
+        background-color: var(--creamy-white);
+        line-height: 1.6;
+        margin: 0;
+        min-height: 100vh;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: var(--creamy-white);
+    }
+    
+    h2,
+    h3,
+    a {
+        color: #34495e;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .logo {
+        margin: 0;
+        font-size: 1.45em;
+    }
+    
+    .main-nav {
+        margin-top: 5px;
+        display: flex;
+        justify-content: right;
+    }
+    
+    .logo a,
+    .main-nav a {
+        padding: 10px 15px;
+        font-family: var(--font-1);
+        font-weight: bold;
+        text-align: center;
+        display: block;
+    }
+    
+    .main-nav a {
+        color: var(--dark-grey);
+        font-size: .99em;
+    }
+    
+    .main-nav a:hover {
+        color: var(--white);
+        background-color: var(--main-green);
+        border-radius: var(--rounded);
+    }
+    
+    .index-text {
+        padding-bottom: 20rem;
+        padding-left: 20rem;
+        padding-top: 20rem;
+        padding-right: 44rem;
+    }
+    
+    .index-h1 {
+        font-size: 80px;
+        font-weight: bold;
+        font-family: var(--font-1);
+        color: var(--dark-grey);
+    }
+    
+    .forskudsopgørelse {
+        color: var(--main-green);
+    }
+    
+    .btn-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .btn {
+        border-radius: var(--rounded);
+        border: 1;
+        width: 17rem;
+        padding: 0.5rem;
+        background-color: var(--white);
+        font-size: 20px;
+        font-family: var(--font-1);
+        box-shadow: 0px 7px 6px 0px rgba(0, 0, 0, 0.16);
+    }
+    
+    .header {
+        padding-top: .5em;
+        padding-bottom: .5em;
+        background-color: #f4f4f4;
+        flex-direction: row;
+        justify-content: right;
+    }
+    
+    .grid-container {
+        height: 100vh;
+        /* Height of the element - vh = view height is the percentage of the height of the screen */
+        width: 100%;
+        background-color: var(--creamy-white);
+        display: grid;
+        /* This display enables the */
+
+        grid-template-columns: repeat(3, 1fr);
+        /* How many rows the elements can fill */
+        /* The area in which you define where your elements are placed, defined by a given name as seen below */
+        padding: 60px;
+        grid-gap: 20px;
+    }
+    
+    .box-mobiler {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+        position: relative;
+        display: inline-grid;
+    }
+    
+    .box-ibil {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: span 5;
+        position: relative;
+        display: inline-grid;
+    }
+    
+    .box-skat {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: span 5;
+        position: relative;
+        display: inline-grid;
+    }
+    
+    .box-3f {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: span 5;
+        position: relative;
+        display: inline-grid;
+    }
+    
+    .nyheder-android {
+        position: absolute;
+        font-family: var(--font-1);
+        grid-row-start: 1;
+        padding: 20px;
+    }
+    
+    .nyheder-fradrag {
+        position: absolute;
+        font-family: var(--font-1);
+        grid-row-start: 4;
+        padding-top: 25rem;
+        padding-left: 20px;
+        color: var(--white);
+    }
+    
+    .nyheder-forskud {
+        position: absolute;
+        font-family: var(--font-1);
+        grid-row-start: 1;
+        padding: 20px;
+        color: var(--white);
+    }
+    
+    .nyheder-3f {
+        position: absolute;
+        font-family: var(--font-1);
+        grid-row-start: 1;
+        padding: 20px;
+    }
+    
+    .flere-nyheder {
+        background-color: var(--main-green);
+        text-align: center;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 15px 32px;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-bottom: 10rem;
+    }
+    footer {
+        background-color: var(--dark-grey);
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .footer-nav {
+        background-color: var(--dark-grey);
+        color: var(--white);
+    }
+
+body {
+	background-color: var(--creamy-white);
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+
+.index-body {
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--creamy-white);
+}
+
+.flex-box {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 9em;
+}
+.h1-omos {
+margin-bottom: 1em;
+margin-top: 1.8em;
+font-size: 50px;
+font-family: var(--font-1);
+color: var(--dark-grey);
+}
+
+.kontakt {
+	margin-right: 15em;
+}
+
+.p-omos{
+	font-size: 35px;
+	font-family: var(--font-1);
+	color: var(--dark-grey);
+	border-left: solid;
+	padding-left: 2em;
+}
+.team{
+	margin-left: 2em;
+}
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+
+
+.main-nav {
+	margin-top: 5px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+
+}
+
+
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	font-family: var(--font-1);
+	font-weight: bold;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: var(--dark-grey);
+}
+
+.main-nav a:hover {
+	color: var(--white);
+	background-color: var(--main-green);
+	border-radius: var(--rounded);
+}
+
+.index-container {
+	display: flex;
+	justify-content: stretch;
+}
+
+.index-text {
+	padding-bottom: 20rem;
+	padding-left: 17rem;
+	padding-top: 17rem;
+	padding-right: 0rem;
+}
+
+.index-h1 {
+	font-size: 75px;
+	line-height: normal;
+	font-weight: bold;
+	font-family: var(--font-1);
+	color: var(--dark-grey);
+	width: 820px;
+}
+
+.forskudsopgørelse {
+	color: var(--main-green);
+}
+.h1-green {
+	color: var(--main-green);
+}
+.h1-scan {
+	font-family: var(--font-1);
+	color: var(--dark-grey);
+	font-size: 50px;
+	margin-top: 10rem;
+}
+.h1-fradrag {
+	font-family: var(--font-1);
+	color: var(--dark-grey);
+	font-size: 40px;
+}
+.h1-nemtogsikkert {
+	font-family: var(--font-1);
+	color: var(--dark-grey);
+	font-size: 50px;
+	padding-top: 18rem;
+	width: 500px;
+	margin-right: -5rem;
+}
+.h1-bekymringer {
+	font-family: var(--font-1);
+	color: var(--dark-grey);
+	font-size: 50px;
+	padding-top: 18rem;
+	width: 500px;
+}
+.scan-img {
+	margin-left: -10rem;
+}
+
+.scan-text {
+	width: 554px;
+	margin-left: -20rem;
+}
+
+.funktioner-scan {
+	display: flex;
+	justify-content: space-evenly;
+	height: 880px;
+	width: 1920px;
+	margin-top: 2rem;
+}
+
+.arrow-right {
+	display: flex;
+	justify-content: end;
+	margin-right: 5rem;
+	margin-top: -15rem;
+}
+
+.fradrag-img {
+	margin-left: 10rem;
+}
+
+.bilogvej {
+	margin-left: 11rem;
+}
+
+.fradrag-text {
+	width: 600px;
+	margin-right: -10rem;
+}
+
+.arrow-left {
+	display: flex;
+	justify-content: start;
+	margin-left: 5rem;
+	margin-top: -10rem;
+	margin-bottom: 15rem;
+}
+
+.funktioner-fradrag {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 20rem;
+	height: 1080;
+	width: 1920px;
+}
+
+.funktioner-opgorelse {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 20rem;
+	height: 1080;
+	width: 1920px;
+	margin-bottom: 8rem;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+}
+.btn {
+	border-radius: var(--rounded);
+	border: 1;
+	width: 22rem;
+	padding: 0.5rem;
+	background-color: var(--white);
+	font-size: 40px;
+	font-weight: bold;
+	font-family: var(--font-1);
+	box-shadow: 0px 7px 6px 0px rgba(0,0,0,0.16);
+	justify-content: center;
+	vertical-align: middle;
+}
+
+.icon-index{
+	vertical-align: middle;
+}
+.index-img {
+    justify-content: center;
+}
+.nemskat-mockup {
+	position: relative;
+	left: -15em;
+}
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-color: #f4f4f4;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+.nemlogo{
+	padding-left: 30px;
+	margin: 0;
+	align-self: center;
+	justify-content: left;
+
+
+}
+
+.link-p {
+	font-size: 27px;
+}
+
+
+/*//////////////////////// FOOTER //////////////////////*/
+
+.footerbox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+footer {
+	background-color: var(--dark-grey);
+    align-items: center;
+    line-height: 2.6;
+	
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    flex-wrap: wrap;
+
+}
+
+
+.footlink{
+    font-size: 22px;
+   
+}
+
+.footlink-p{
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.footer-some{
+    margin-left: 50px;
+    margin-top: 15px;
+    grid-column:3/3;
+    grid-row:1/1;
+    margin-left: auto;
+    
+}
+
+
+.footer-nav {
+ 
+    grid-column:2/2;
+    grid-row:1/1;
+
+	background-color: var(--dark-grey);
+	color: var(--white);
+    text-align: center;
+ 
+}
+
+.footer2{
+	background-color: #72C27C;
+	display: block;
+	text-align: center;
+	padding: 27px;
+}
+
+
+.nested{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.nested2{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-flow: dense;
+
+}
+
+.nested2 > img {
+padding: 10px;
+}
+
+
+.leftmargin{
+    padding-left: 100px;
+}
+.rightmargin{
+    padding-right: 100px;
+}
+

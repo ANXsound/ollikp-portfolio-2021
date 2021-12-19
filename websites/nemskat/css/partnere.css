@@ -1,0 +1,48 @@
+
+.partner-h1 {
+	font-size: 80px;
+	font-weight: bold;
+	font-family: var(--font-1);
+	color: var(--dark-grey);
+	width:10em;
+    margin: 0 auto;
+    text-align: center;
+	padding-top: 6rem;
+}
+
+.partner-h2 {
+	font-size: 45px;
+	font-weight: bold;
+	font-family: var(--font-1);
+	color: var(--dark-grey);
+	width:15em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ansoegknap {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+}
+
+.partner-box {
+	display: block;
+	padding-bottom: 5rem;
+	padding-top: 5rem;
+}
+
+.partnerlogoer {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer2{
+	background-color: #72C27C;
+	display: block;
+	text-align: center;
+	padding: 27px;
+}
