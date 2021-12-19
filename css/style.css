@@ -364,6 +364,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   width: 100wv;
   background-color: #F7F7F5;
 } 
+
 .h1-nemskat  {
   color: #72c27c;
   font-size: 51px;
@@ -394,7 +395,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 }
 
 .section-nemskat-visual {
-  height: 40vh;
+  height: 40.6vh;
   object-fit: cover;
   display: flex;
   align-items: flex-end;
@@ -439,7 +440,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 }
 
 .section-ballet-visual {
-  height: 46.4vh;
+  height: 47.5vh;
   object-fit: cover;
   display: flex;
   align-items: flex-end;
@@ -480,7 +481,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 }
 
 .section-video-visual {
-  height: 46.3vh;
+  height: 49.4vh;
   object-fit: cover;
   display: flex;
   align-items: flex-end;
@@ -521,7 +522,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 }
 
 .section-bolly-visual {
-  height: 47.6vh;
+  height: 46.3vh;
   object-fit: cover;
   display: flex;
   align-items: flex-end;
@@ -1195,6 +1196,10 @@ footer {
     width: 26%;
   }
 
+  .img-container-index:hover {
+    transform: scale(1.1);
+  }
+
   .shadow {
     box-shadow: inset 80px 0px 20px 1px rgba(26,35,29,0.8);
   }
@@ -1207,49 +1212,40 @@ footer {
   /* ------------------- Zealand 21/22 ------------------- */
 
   .h2-zealand {
-    padding-left: 10rem;
-    font-size: 23px;
+    padding-top: 6rem;
+    font-size: 2rem;
+    line-height: 1.4;
   }
   
   .p-zealand {
-    font-family: var(--font-main);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 45px;
+    font-size: 2rem;
+    line-height: 2;
     margin-top: 0.5rem;
   }
   
-  .btn {
-    border-radius: var(--rounded-button);
-    font-family: var(--font-main);
-    width: 9rem;
-    padding: 0.5rem;
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
-    border: 0;
-    font-size: 17px;
-    text-transform: uppercase; 
-    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.16);
-    cursor:pointer;
-    font-weight: 400;
+  .left {
+    width: 35vw;
   }
 
-  .btn:hover {
-    transform: scale(1.1);
+  .btn {
+    width: 18rem;
+    padding: 1rem;
+    font-size: 2rem;
   }
   
   .icon-index {
     vertical-align: middle;
-    padding-left: 0.3rem;
+    padding-left: 0.8rem;
+    transform: scale(1.5);
   }
   
   .grid-container {
     display: grid;
     margin-left: -1rem;
     margin-top: 0.8rem;
-    padding-right: 95rem;
+    padding-right: 0rem;
     grid-template-columns: auto auto;
-    gap: 0.7rem;
+    gap: 1.5rem;
     /* background-color: #2196F3; */
     /* ^^background color til grid for placering */
   }
@@ -1260,64 +1256,173 @@ footer {
     /* ^^background color til grid-felter for placering */
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space;
     align-items: center;
   }
   
   /* NemSkat */
   .section-nemskat-text {
-    padding-top: 6rem;
-    padding-left: 1.5rem;
-    font-weight: var(--font-bold);
+    padding-left: 10rem;
     width: 100vw;
-    background-color: #F7F7F5;
+    height: 100vh;
     display: flex;
   } 
 
-  .left {
-    width: 45vw;
-  }
   .h1-nemskat  {
-    color: #72c27c;
-    font-size: 51px;
-  }
-  
-  .skat-color {
-    color: #3A3244;
+    font-size: 7rem;
   }
   
   .p-nemskat {
-    line-height: 37px;
-  }
-  
-  .btn-nemskat-web {
-    color: #fff;
-    background-color: #72C27C;
+    line-height: 1.9;
+    padding-top: 2rem;
   }
   
   .btn-nemskat-insta {
-    background-color: #fff;
-    font-size: 13px;
-    padding-left: 0.5rem;
-  }
-  
-  .btn-nemskat-app {
-    color: #fff;
-    background-color: #3A3244;
+    font-size: 1.8rem;
   }
   
   .section-nemskat-visual {
-    height: 45.3vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    overflow-x: hidden;
+    height: 90vh;
+    width: 55%;
+    position: absolute;
+    right: 0;
   }
   
   .nemskat-visual {
     width: 100%;
     height: auto;
+    overflow: hidden;
+    margin-left: 0rem;
+  }
+
+  /* Balletbørnene */
+.section-ballet-text {
+  padding-left: 10rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+
+  .h1-ballet  {
+  font-size: 6rem;
+  }
+
+  .p-ballet {
+    margin-bottom: 1.5rem;
+    line-height: 2.5;
+  }
+
+  .btn-ballet-prototype {
+    font-size: 1.8rem;
+  }
+
+  .section-ballet-visual {
+  height: 90vh;
+    width: 55%;
+    position: absolute;
+    right: 0;
+  }
+
+  .ballet-visual {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 0rem;
+  }
+
+  /* How To Date */
+  .section-video-text {
+    padding-left: 10rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+
+  .h1-video  {
+    font-size: 5rem;
+  }
+
+  .btn-video {
+    color: #fff;
+    background-color: #1E222C;
+    padding: 1rem;
+    padding-inline: 2.7rem;
+  }
+
+  .icon-video {
+    width: 9%;
+  }
+
+  .section-video-visual {
+    height: 90vh;
+    width: 60%;
+    position: absolute;
+    right: 0;
+  }
+
+  .video-visual {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 0rem;
+  }
+
+  /* BollyWolly */
+  .section-bolly-text {
+    padding-left: 10rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+  .h1-bolly  {
+    font-size: 6rem;
+  }
+
+  .btn-bolly-prototype {
+    font-size: 1.8rem;
+  }
+
+  .section-bolly-visual {
+    height: 90vh;
+    width: 45%;
+    position: absolute;
+    right: 0;
+  }
+
+  .bolly-visual {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 0rem; 
+  }
+
+  /* O-zone */
+  .section-ozone-text {
+    padding-left: 10rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+  .h1-ozone   {
+    font-size: 6rem;
+  }
+
+  .btn-ozone-web {
+    font-size: 1.8rem;
+  }
+
+  .section-ozone-visual {
+    height: 90vh;
+    width: 55%;
+    position: absolute;
+    right: 0;
+  }
+
+  .ozone-visual {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 0rem;  
   }
 
   /* ------------------- Visuals ------------------- */
@@ -1537,7 +1642,7 @@ footer {
   .img-oliver-container {
     margin-top: 1rem;
     position: relative;
-    width: 70%;
+    width: 69%;
     height: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -1547,7 +1652,7 @@ footer {
 
   .aboutme-text-container {
     margin-inline: 1rem;
-    height: 53vh;
+    height: 58vh;
     width: 44vw;
     padding-left: 1rem;
     padding-right: 17rem;
@@ -1613,7 +1718,7 @@ footer {
 
   .h2-cv {
     font-size: 3rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   .h2-cv-multimedia {
