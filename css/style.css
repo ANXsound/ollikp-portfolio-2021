@@ -886,6 +886,9 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 
 /* ------------------- About Me ------------------- */
 
+.section-portrait {
+  background-color: var(--primary-light);
+}
 
 .h2-myname {
   font-family: var(--font-main);
@@ -964,6 +967,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   padding-right: 1.2rem;
   padding-block: 0.4rem;
   position: relative;
+  box-shadow: var(--box-shadow);
 }
 
 .img-green-alien {
@@ -974,6 +978,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   bottom: 0;
   right: 0;
   padding-right: 1rem;
+  transform: rotate(-2.8deg);
 }
 
 .section-cv {
@@ -1000,7 +1005,6 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   height: 68vh;
   width: 88vw;
   margin-inline: auto;
-  
 }
 
 .cv-box {
@@ -1496,6 +1500,138 @@ footer {
   .iframe-mus {
     width: 80%; 
     height: 400px;
+  }
+
+  /* ------------------- About Me ------------------- */
+
+  .about-flexbox {
+    display: flex;
+    padding-top: 5rem;
+  }
+
+ .aboutme-leftside {
+  margin-top: 10rem;
+ }
+
+  .aboutme-rightside {
+    margin-top: 10rem;
+    margin-right: 10rem;
+  }
+
+  .h2-myname {
+  font-size: 3rem;
+  padding-left: 9rem;
+  padding-top: 1rem;
+  text-align: start;
+  }
+
+  .h2-hello {
+    font-size: 3.8em;
+    margin-top: 1rem;
+  }
+
+  .aboutme-text-container {
+    width: 40vw;
+  }
+
+  .img-oliver-container {
+    margin-top: 1rem;
+    position: relative;
+    width: 70%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--rounded);
+    box-shadow: var(--box-shadow);
+  }
+
+  .aboutme-text-container {
+    margin-inline: 1rem;
+    height: 53vh;
+    width: 44vw;
+    padding-left: 1rem;
+    padding-right: 17rem;
+    padding-block: 0.4rem;
+    position: relative;
+  }
+
+  .h1-cv {
+    padding-top: 12rem;
+    font-size: 4rem;
+    margin-inline: 3rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .h2-text-intro {
+    font-size: 4em;
+    padding-top: 1rem;
+    padding-bottom: 1.4rem;
+    padding-left: 1rem;
+  }
+
+  .p-aboutme {
+    padding-right: 0.9rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .p-groups {
+    font-size: 1.6em;
+  }
+
+  .img-green-alien {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 1rem;
+  }
+
+  .cv-cards-container {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 42% 42%;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cv-box {
+    background-color: var(--primary-light);
+    height: 92%;
+    width: 98%;
+    border-radius: var(--rounded);
+    border: 1px solid #707070;
+    padding-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .h2-cv {
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
+
+  .h2-cv-multimedia {
+    font-size: 2.8rem;
+  }
+  
+  .h2-cv-hhx {
+    font-size: 2.6rem;
+  }
+  
+  .h3-cv {
+    font-size: 2.1rem;
+    padding-right: 16rem;
+    line-height: 1.3em;
+  }
+  
+  .p-cv {
+    font-size: 2.4rem;
   }
 
   /* ------------------- Footer ------------------- */
