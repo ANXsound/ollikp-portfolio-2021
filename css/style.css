@@ -838,7 +838,6 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   height: 7.5rem;
   border-radius: var(--rounded);
   text-align: center;
-  
 }
 
 .grid-box-support {
@@ -1108,6 +1107,7 @@ footer {
 .some-icons {
   width: 75px;
   height: auto;
+
 }
 
 /* ------------------- MEDIA QUERY ------------------- */
@@ -1131,7 +1131,7 @@ footer {
   .my-logo {
     padding-top: 1.2rem;
     padding-left: 3rem;
-    z-index: 1;
+    z-index: 2;
   }
 
   .my-logo:hover{
@@ -1149,31 +1149,28 @@ footer {
   gap: 4rem;
   padding: 1rem;
   padding-right: 3rem;
-  border-bottom: 5px solid #9ea19f9a;
-}
+  z-index: 1;
+  }
 
-ul a {
+  ul a {
   float: left;
   display: block;
   color: var(--primary-dark)
   text-align: center;
-  padding: 16px 16px;
+  padding: 16px 35px;
   text-decoration: none;
-  font-size: 1.3rem;
-}
+  font-size: 1.2rem;
+  }
 
-ul a:hover {
+  ul a:hover {
   transform: scale(1.1);
-}
+  }
 
-.current-page {
+  .current-page {
   background: var(--primary-dark);
   color: var(--primary-light);
   border-radius: var(--rounded-button);
-}
-
-
-
+  }
 
   /* ------------------- Index ------------------- */
 
@@ -1184,7 +1181,6 @@ ul a:hover {
   .h3-index {
     font-size: 5rem;
     border-bottom: 5px solid var(--soft-dark);
-
   }
 
   .content-index {
@@ -1195,10 +1191,6 @@ ul a:hover {
     width: 26%;
   }
 
-  .zealand-img-index {
-    
-  }
-
   .shadow {
     box-shadow: inset 80px 0px 20px 1px rgba(26,35,29,0.8);
   }
@@ -1206,5 +1198,319 @@ ul a:hover {
   .h2-index {
     font-size: 3.8rem;
     left: 4.5rem;
+  }
+
+  /* ------------------- Zealand 21/22 ------------------- */
+
+  .h2-zealand {
+    padding-left: 10rem;
+    font-size: 23px;
+  }
+  
+  .p-zealand {
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 45px;
+    margin-top: 0.5rem;
+  }
+  
+  .btn {
+    border-radius: var(--rounded-button);
+    font-family: var(--font-main);
+    width: 9rem;
+    padding: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    border: 0;
+    font-size: 17px;
+    text-transform: uppercase; 
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.16);
+    cursor:pointer;
+    font-weight: 400;
+  }
+
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon-index {
+    vertical-align: middle;
+    padding-left: 0.3rem;
+  }
+  
+  .grid-container {
+    display: grid;
+    margin-left: -1rem;
+    margin-top: 0.8rem;
+    padding-right: 95rem;
+    grid-template-columns: auto auto;
+    gap: 0.7rem;
+    /* background-color: #2196F3; */
+    /* ^^background color til grid for placering */
+  }
+  
+  .grid-box {
+    /* background-color: rgba(255, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8); */
+    /* ^^background color til grid-felter for placering */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* NemSkat */
+  .section-nemskat-text {
+    padding-top: 6rem;
+    padding-left: 1.5rem;
+    font-weight: var(--font-bold);
+    width: 100vw;
+    background-color: #F7F7F5;
+    display: flex;
+  } 
+
+  .left {
+    width: 45vw;
+  }
+  .h1-nemskat  {
+    color: #72c27c;
+    font-size: 51px;
+  }
+  
+  .skat-color {
+    color: #3A3244;
+  }
+  
+  .p-nemskat {
+    line-height: 37px;
+  }
+  
+  .btn-nemskat-web {
+    color: #fff;
+    background-color: #72C27C;
+  }
+  
+  .btn-nemskat-insta {
+    background-color: #fff;
+    font-size: 13px;
+    padding-left: 0.5rem;
+  }
+  
+  .btn-nemskat-app {
+    color: #fff;
+    background-color: #3A3244;
+  }
+  
+  .section-nemskat-visual {
+    height: 45.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    overflow-x: hidden;
+  }
+  
+  .nemskat-visual {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ------------------- Visuals ------------------- */
+  
+  .logo-space-dark-visual {
+    width: 500px;
+    margin-top: 4rem;
+  }
+
+  .h2-visual-category{
+    font-size: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .h2-insta{
+    padding-bottom: 3rem;
+  }
+
+  .h2-visual-title{
+    padding-top: 3rem;
+    padding-left: 14.5em;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+  }
+
+  .h2-insta{
+    font-size: 3.5rem;
+  }
+
+  .grid-container-instagram {
+    width: 60%;
+    margin-inline: auto;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+  }
+
+
+  .grid-box-instagram:hover {
+    transform: scale(1.025);
+  }
+
+  .musicvideo {
+    width: 61%;
+    height: 650px;
+    margin-inline: auto;
+  }
+
+  .logo-anx-white-visual {
+    width: 280px;
+    padding-top: 7rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .section-spotify-canvas {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .color {
+    width: 50%;
+    float: left;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    justify-content: center;
+  }
+
+  .promo-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
+  }
+
+  .h2-visual-title-promo {
+    font-size: 1.5rem;
+  }
+
+  .spotify-canvas {
+    width: 349px;
+    height: 600px;
+  }
+
+  /* ------------------- Music ------------------- */
+
+  .logo-space-dark {
+    width: 500px;
+  }
+
+  .h2-music {
+    font-size: 2.8rem;
+  }
+
+  .logo-anx-dark {
+    width: 220px;
+  }
+
+  .iframe-spacerush {
+    width: 70vw;
+    height: 50vh;
+  }
+
+  .iframe-anx {
+    width: 70vw;
+    height: 50vh;
+  }
+
+  .h2-support{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .grid-container-support {
+    background-color: rgba(255, 0, 0, 0);
+    border: 15x solid rgb(0, 0, 0);
+    /* ^^background color til grid-felter for placering */
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 40% 40%;
+    row-gap: 5rem;
+    column-gap: 1rem;
+    margin-top: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 1.3rem;
+  }
+
+  .grid-box-support-big {
+    background-color: rgba(0, 102, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    /* ^^background color til grid-felter for placering */
+    width: 80%;
+    height: 100%;
+    border-radius: var(--rounded);
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid-box-support {
+    width: 70%;
+    height: 80%;
+    border-radius: var(--rounded);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .h3-support {
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  .hide-br {
+    display: none;
+  }
+
+  .h2-mandellermus {
+    font-size: 3rem;
+  }
+  
+  .h3-mandellermus {
+    padding-top: 5rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .iframe-mus {
+    width: 80%; 
+    height: 400px;
+  }
+
+  /* ------------------- Footer ------------------- */
+
+  .email-link {
+    font-size: 6.5rem;
+  }
+
+  .email-link-visuals {
+    font-size: 6.5rem;
+  }
+
+  .some-icons {
+    width: 150px;
+    height: auto;
+    margin-inline: 1rem;
   }
 }
