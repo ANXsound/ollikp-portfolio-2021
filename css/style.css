@@ -395,7 +395,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 }
 
 .section-nemskat-visual {
-  height: 40.6vh;
+  height: 40vh;
   object-fit: cover;
   display: flex;
   align-items: flex-end;
@@ -440,7 +440,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 }
 
 .section-ballet-visual {
-  height: 47.5vh;
+  height: 46.8vh;
   object-fit: cover;
   display: flex;
   align-items: flex-end;
@@ -481,7 +481,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 }
 
 .section-video-visual {
-  height: 49.4vh;
+  height: 48.9vh;
   object-fit: cover;
   display: flex;
   align-items: flex-end;
@@ -1232,6 +1232,10 @@ footer {
     padding: 1rem;
     font-size: 2rem;
   }
+
+  .btn:hover {
+    transform: scale(1.1);
+  }
   
   .icon-index {
     vertical-align: middle;
@@ -1282,7 +1286,7 @@ footer {
   }
   
   .section-nemskat-visual {
-    height: 90vh;
+    height: 89.8vh;
     width: 55%;
     position: absolute;
     right: 0;
@@ -1317,7 +1321,7 @@ footer {
   }
 
   .section-ballet-visual {
-  height: 90vh;
+  height: 89.8vh;
     width: 55%;
     position: absolute;
     right: 0;
@@ -1354,7 +1358,7 @@ footer {
   }
 
   .section-video-visual {
-    height: 90vh;
+    height: 89.8vh;
     width: 60%;
     position: absolute;
     right: 0;
@@ -1383,7 +1387,7 @@ footer {
   }
 
   .section-bolly-visual {
-    height: 90vh;
+    height: 89.8vh;
     width: 45%;
     position: absolute;
     right: 0;
@@ -1652,10 +1656,10 @@ footer {
 
   .aboutme-text-container {
     margin-inline: 1rem;
-    height: 58vh;
+    height: 60vh;
     width: 44vw;
     padding-left: 1rem;
-    padding-right: 17rem;
+    padding-right: 15rem;
     padding-block: 0.4rem;
     position: relative;
   }
@@ -1682,11 +1686,11 @@ footer {
   }
 
   .p-groups {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 
   .img-green-alien {
-    width: 250px;
+    width: 200px;
     height: auto;
     object-fit: cover;
     position: absolute;
