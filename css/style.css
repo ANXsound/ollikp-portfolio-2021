@@ -56,14 +56,15 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   z-index: 2;
   width: 100vw;
   height: 60px;
+  background-color: var(--primary-dark);
 }
 
 .my-logo {
   font-family: var(--font-main);
   font-weight: var(--font-bold);
-  font-size: 40px;
+  font-size: 30px;
   padding-left: 1rem;
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
   padding-bottom: 0.2rem;
   position: fixed;
   color: var(--primary-light)
@@ -75,7 +76,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   right: 0;
   z-index: 2;
   cursor: pointer;
-  width: 60px;
+  width: 75px;
   height: 60px;
   opacity: 0;
 }
@@ -85,9 +86,10 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   top: 0;
   right: 0;
   z-index: 1;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 25px;
   padding: 1rem;
+  padding-top: 1.1rem;
   background: var(--primary-dark);
   display: flex;
   align-items: center;
@@ -238,13 +240,13 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   height: 27vh;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid var(--soft-dark);
+  /* border-bottom: 1px solid var(--soft-dark); */
 }
 
 .h3-index {
   font-family: var(--font-main);
   font-weight: var(--font-bold);
-  font-size: 45px;
+  font-size: 30px;
   font-style: italic;
   font-weight: 400;
   margin-top: 10rem;
@@ -304,17 +306,16 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 
 /* ------------------- 3D Parallax Cards ------------------- */
 .container {
-  padding: 40px 80px;
+  padding: 20px 0px;
   display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr;
-  justify-content: center;
+  align-items:center;
+  justify-content:center;
 }
 
-/* .aboutme-card {
+.grid-item-card {
   grid-row: 2/3;
   grid-column: 2/3;
-} */
+}
 
 .card-wrap {
   margin: 10px;
@@ -348,8 +349,8 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 .card {
   position: relative;
   flex: 0 0 1000px;
-  width: 340px;
-  height: 500px;
+  width: 140px;
+  height: 230px;
   background-color: #333;
   overflow: hidden;
   border-radius: 10px;
@@ -382,13 +383,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   transition: 0.2s 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .card-info p {
-  opacity: 0;
-  text-shadow: black 0 2px 3px;
-  transition: 0.6s 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-  text-align: left;
-  padding-inline: 1rem;
-  padding-block: 0.5rem;
-  border-radius: 10px;
+  display: none;
 }
 .card-info * {
   position: relative;
@@ -411,16 +406,24 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 
 .card-info h1 {
   font-family: var(--font-main);
-  font-size: 28px;
+  font-size: 14px;
   font-weight: 400;
   text-shadow: rgb(0, 0, 0) 0 10px 10px;
-
   text-align: start;
   background-color: #2d2d36;
-  padding-inline: 2rem;
-  padding-block: 1rem;
+  padding-inline: 0.6rem;
+  padding-block: 0.4rem;
   border-radius: 10px;
   white-space: nowrap;
+}
+
+
+/* ------------------- Hotel Fjordkroen ------------------- */
+
+.fjordkroen-logo{
+  width: 300px;
+  height: auto;
+  padding-top: 0.5rem;
 }
 
 /* ------------------- Zealand 21/22 ------------------- */
@@ -429,26 +432,29 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   font-family: var(--font-main);
   font-style: var(--font-italic);
   font-weight: 400;
-  font-size: 23px;
+  font-size: 18px;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
 }
 
 .p-zealand {
   font-family: var(--font-main);
   font-weight: 400;
-  font-size: 18px;
-  line-height: 45px;
-  margin-top: 0.5rem;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .btn {
   border-radius: var(--rounded-button);
   font-family: var(--font-main);
-  width: 9rem;
-  padding: 0.5rem;
+  width: 8rem;
+  padding: 0rem;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
   border: 0;
-  font-size: 17px;
+  font-size: 13px;
   text-transform: uppercase; 
   box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.16);
   cursor:pointer;
@@ -458,15 +464,21 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 .icon-index {
   vertical-align: middle;
   padding-left: 0.3rem;
+  width: 15px;
+  height: auto;
+}
+
+.app-icon {
+  width: 11px;
 }
 
 .grid-container {
   display: grid;
-  margin-left: -1rem;
+  margin-left: -3rem;
   margin-top: 0.8rem;
-  padding-right: 1.5rem;
   grid-template-columns: auto auto;
   gap: 0.7rem;
+  justify-content: center;
   /* background-color: #2196F3; */
   /* ^^background color til grid for placering */
 }
@@ -484,15 +496,17 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 /* NemSkat */
 .section-nemskat-text {
   padding-top: 6rem;
-  padding-left: 1.5rem;
   font-weight: var(--font-bold);
   width: 100wv;
+  height: calc(100vh - 97px);
   background-color: #F7F7F5;
+  position: relative;
 } 
 
 .h1-nemskat  {
   color: #72c27c;
   font-size: 51px;
+  padding-left: 1.5rem;
 }
 
 .skat-color {
@@ -500,7 +514,8 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 }
 
 .p-nemskat {
-  line-height: 37px;
+  line-height: 1.8;
+  padding-left: 1.5rem;
 }
 
 .btn-nemskat-web {
@@ -519,18 +534,22 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   background-color: #3A3244;
 }
 
-.section-nemskat-visual {
-  height: 40vh;
-  object-fit: cover;
-  display: flex;
-  align-items: flex-end;
-  overflow-x: hidden;
+.fjordkroen-visual {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;  
 }
 
 .nemskat-visual {
-  width: 120%;
-  margin-left: -1.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: auto;  
+}
+
+.section-fjordkroen {
+  background-color: #F0F0EB;
 }
 
 /* Balletbørnene */
@@ -1279,12 +1298,13 @@ footer {
   list-style-type: none;
   display: flex;
   justify-content: end;
-  gap: 4rem;
+  gap: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.66) 0 0px 5px 0;
   background-color: var(--primary-dark);
+  
   }
 
   ul a {
@@ -1297,6 +1317,7 @@ footer {
   font-size: 1rem;
   font-weight: 700;
   color: var(--primary-light);
+  margin-right: 2rem;
   }
 
   ul a:hover {
@@ -1315,7 +1336,7 @@ footer {
   /* ------------------- Index ------------------- */
 
   .heading-index {
-    border-bottom: 1px solid var(--soft-dark);
+    /* border-bottom: 1px solid var(--soft-dark); */
     width: 83.5vw;
   }
 
@@ -1323,7 +1344,7 @@ footer {
     font-size: 3rem;
     font-style: italic;
     font-weight: 400;
-    margin-top: 12rem;
+    margin-top: 14rem;
   }
 
   .content-index {
@@ -1347,11 +1368,129 @@ footer {
     left: 4.5rem;
   }
 
+  /* ------------------- 3D Parallax Cards ------------------- */
   .container {
-    padding: 40px 80px;
+    padding: 60px 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  .card-wrap {
+    margin: 10px;
+    transform: perspective(800px);
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  .card-wrap:hover .card-info {
+    transform: translateY(0);
+  }
+  .card-wrap:hover .card-info p {
+    opacity: 1;
+  }
+  .card-wrap:hover .card-info, .card-wrap:hover .card-info p {
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .card-wrap:hover .card-info:after {
+    transition: 1s cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .card-wrap:hover .card-bg {
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 0.8;
+  }
+  .card-wrap:hover .card {
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+  }
+
+  .card {
+    position: relative;
+    flex: 0 0 1000px;
+    width: 340px;
+    height: 500px;
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    transition: 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+
+  .card-bg {
+    opacity: 0.8;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    pointer-events: none;
+  }
+
+  .card-info {
+    padding: 20px;
+    padding-bottom: 40px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    transform: translateY(40%);
+    transition: 0.2s 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .card-info p {
+    opacity: 0;
+    text-shadow: black 0 2px 3px;
+    transition: 0.6s 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    text-align: left;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 10px;
+    line-height: 1.5;
+    display: block;
+  }
+  .card-info * {
+    position: relative;
+    z-index: 1;
+  }
+  .card-info:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 110%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent 0%, rgb(21, 20, 27) 0%);
+    background-blend-mode: overlay;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 1s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+
+  .card-info h1 {
+    font-family: var(--font-main);
+    font-size: 28px;
+    font-weight: 400;
+    text-shadow: rgb(0, 0, 0) 0 10px 10px;
+    text-align: start;
+    background-color: #2d2d36;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  /* ------------------- Hotel Fjordkroen ------------------- */
+
+  .fjordkroen-logo{
+    width: 650px;
+    height: auto;
+    padding-top: 0.5rem;
+    padding-left: 6.6rem;
   }
 
   /* ------------------- Zealand 21/22 ------------------- */
@@ -1360,12 +1499,14 @@ footer {
     padding-top: 6rem;
     font-size: 2rem;
     line-height: 1.4;
+    padding-left: 10rem;
   }
   
   .p-zealand {
     font-size: 2rem;
     line-height: 2;
     margin-top: 0.5rem;
+    background-color: #68A2A7;
   }
   
   .left {
@@ -1395,6 +1536,7 @@ footer {
     padding-right: 0rem;
     grid-template-columns: auto auto;
     gap: 1.5rem;
+    padding-left: 20rem;
     /* background-color: #2196F3; */
     /* ^^background color til grid for placering */
   }
@@ -1411,37 +1553,40 @@ footer {
   
   /* NemSkat */
   .section-nemskat-text {
-    padding-left: 10rem;
     width: 100vw;
     height: 100vh;
     display: flex;
+    height: calc(100vh - 96px);
   } 
 
   .h1-nemskat  {
     font-size: 7rem;
+    padding-left: 10rem;
   }
   
   .p-nemskat {
     line-height: 1.9;
     padding-top: 2rem;
+    padding-left: 10rem;
   }
   
   .btn-nemskat-insta {
     font-size: 1.8rem;
   }
   
-  .section-nemskat-visual {
-    height: 89.8vh;
-    width: 55%;
+  .fjordkroen-visual {
     position: absolute;
     right: 0;
+    width: 50%;
+    height: auto; 
   }
-  
+
   .nemskat-visual {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    margin-left: 0rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: auto; 
   }
 
   /* Balletbørnene */
