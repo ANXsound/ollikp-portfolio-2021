@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icon-head.png">
     <link rel="stylesheet" href="https://use.typekit.net/fno7cne.css">
@@ -15,8 +17,8 @@
     <nav class="desktop-nav show-desktop">
         <a class="my-logo-a" href="index.html"><h1 class="my-logo">OlliKP</h1></a>
         <ul>
-            <li><a href="zealand.html">Zealand 21/22</a></li>
-            <li><a href="visuals.html">Visuals</a></li>
+            <li><a href="zealand.html">Web Design</a></li>
+            <li><a href="visuals.html">Visual Design</a></li>
             <li><a href="music.html">Music</a></li>
             <li><a href="aboutme.html">About Me</a></li>
         </ul>  
@@ -32,8 +34,8 @@
                 <div>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="zealand.html">Zealand 21/22</a></li>
-                        <li><a href="visuals.html">Visuals</a></li>
+                        <li><a href="zealand.html">Web Design</a></li>
+                        <li><a href="visuals.html">Visual Design</a></li>
                         <li><a href="music.html">Music</a></li>
                         <li><a href="aboutme.html">About Me</a></li>
                     </ul>    
@@ -42,11 +44,39 @@
         </div>
     </nav>
 
-    <Section class="container-snap center-horizontal background-index">
+    <Section class="background-index">
         <section class="heading-index center-horizontal">
-            <h3 class="h3-index">My Portfolio</h3>
+            <h3 class="h3-index">Portfolio 2022</h3>
         </section>
-        <section class="content-index center-horizontal">
+
+        <div id="app" class="container">
+            <a href="zealand.html">
+                <card data-image="https://i.ibb.co/bs848ZJ/zealand-visual.jpg">
+                <h1 slot="header">Web Design</h1>
+                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </card>
+            </a>
+            <a href="visuals.html">
+                <card data-image="https://i.ibb.co/8jVpTXJ/visuals-visual.png">
+                <h1 slot="header">Visual Design</h1>
+                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </card>
+            </a>
+            <a href="music.html">
+                <card data-image="https://i.ibb.co/wz0wvHm/music-visual.png">
+                <h1 slot="header">Music</h1>
+                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </card>
+            </a>
+            <a href="aboutme.html">
+                <card class="aboutme-card" data-image="https://mj-gallery.com/5640760f-8540-4657-af29-5b4cc6972e88/grid_0.png">
+                <h1 slot="header">About Me</h1>
+                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </card>
+            </a>
+          </div>
+
+        <!-- <section class="content-index center-horizontal">
             
             <div class="img-container-index">
                 <a href="zealand.html">
@@ -72,7 +102,9 @@
                 </a>
             </div>
         
-        </section>
+        </section> -->
     </Section>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script> <script src="js/main.js"></script> 
 </body>
 </html>
