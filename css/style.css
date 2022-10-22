@@ -836,7 +836,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   font-family: var(--font-main);
   font-weight: var(--font-bold);
   font-size: 1.5rem;
-  padding-left: 1rem;
+  text-align: center;
 }
 
 .h2-insta{
@@ -932,10 +932,6 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   border-radius: var(--rounded);
 }
 
-.canvas-margin {
-  padding-left: 2rem;
-}
-
 .section-visuals-anx {
   background-color: var(--primary-dark);
   padding-top: 1rem;
@@ -956,6 +952,10 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 .section-visuals-poster {
   background-color: var(--primary-light );
   padding-top: 1rem;
+}
+
+.div-frame{
+  border-bottom: 2px rgb(150, 160, 167) solid;
 }
 
 /* ------------------- Posters ------------------- */
@@ -1033,7 +1033,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 
 .h2-anx-releases {
   padding-top: 0.3rem;
-  border-top: 5px solid var(--primary-light);
+  border-top: 2px solid var(--primary-light);
   margin-inline: 4rem;
 }
 
@@ -1073,7 +1073,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 
 .h2-support {
   font-size: 2.2rem;
-  border-bottom: 5px solid var(--soft-dark);
+  border-bottom: 2px solid var(--soft-dark);
   margin-inline: 2rem;
   margin-top: 7rem;
 }
@@ -1126,7 +1126,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 }
 
 .h2-mandellermus {
-  border-bottom: 5px solid var(--primary-light);
+  border-bottom: 2px solid var(--primary-light);
   font-size: 1.5rem;
   margin-inline: 3rem;
   padding-top: 1.5rem;
@@ -1156,6 +1156,10 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 
 .section-portrait {
   background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .h2-myname {
@@ -1171,8 +1175,8 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 .img-oliver-container {
   margin-top: 1rem;
   position: relative;
-  width: 58%;
-  height: 26%;
+  width: 50%;
+  
   margin-left: auto;
   margin-right: auto;
   border-radius: var(--rounded);
@@ -1180,7 +1184,6 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 }
 
 .img-oliver {
-  transform: scaleX(-1);
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -1192,7 +1195,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 .h2-hello {
   font-style: var(--font-italic);
   font-weight: 400;
-  font-size: 1.9em;
+  font-size: 1.4em;
   color: var(--primary-dark);
   margin-top: 2.2rem;
   padding-left: 2.5rem;
@@ -1210,7 +1213,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   font-family: var(--font-main);
   font-weight: 400;
   padding-right: 0.9rem;
-  font-size: 1.06rem;
+  font-size: 0.9rem;
 }
 
 .p-titles {
@@ -1220,8 +1223,9 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 
 .p-groups {
   font-weight: var(--font-bold);
-  font-size: 1.65rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
+  margin-top: 0.5rem;
 }
 
 .aboutme-text-container {
@@ -1230,10 +1234,10 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   color: var(--primary-light);
   border-radius: var(--rounded);
   margin-inline: 1.6rem;
-  height: 41vh;
   padding-left: 1rem;
   padding-right: 1.2rem;
-  padding-block: 0.4rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   position: relative;
   box-shadow: var(--box-shadow);
 }
@@ -1257,10 +1261,10 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
 .h1-cv {
   font-family: var(--font-main);
   font-weight: var(--font-bold);
-  padding-top: 7.6rem;
+  padding-top: 5.5rem;
   font-size: 1.8rem;
   text-align: center;
-  border-bottom: 5px solid var(--soft-light);
+ 
   margin-inline: 3rem;
   padding-bottom: 0.5rem;
 }
@@ -1270,15 +1274,14 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   flex-direction: column;
   justify-content: space-between;
   margin-top: 2rem;
+  gap: 1rem;
   height: 68vh;
-  width: 88vw;
+  width: 80vw;
   margin-inline: auto;
 }
 
 .cv-box {
   background-color: var(--primary-light);
-  height: 22.5%;
-  width: 88vw;
   border-radius: var(--rounded);
   border: 1px solid #707070;
   padding: 1rem;
@@ -1292,7 +1295,7 @@ https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100 */
   font-family: var(--font-main);
   font-weight: 400;
   color: var(--primary-dark);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .h2-cv-multimedia {
@@ -1384,7 +1387,7 @@ footer {
 
 /* ----------------------------- MEDIA QUERY ----------------------------- */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1270px) {
   
   /* ------------------- Navbar ------------------- */
 
@@ -1883,8 +1886,12 @@ footer {
   }
 
   .h2-visual-category{
-    font-size: 3rem;
-    padding-bottom: 4rem;
+    font-size: 3vw;
+    padding-bottom: 0rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .h2-insta{
@@ -1893,9 +1900,9 @@ footer {
 
   .h2-visual-title{
     padding-top: 3rem;
-    padding-left: 14.5em;
-    font-size: 1.6rem;
+    font-size: 1.6vw;
     padding-bottom: 1rem;
+    text-align: center;
   }
 
   .h2-insta{
@@ -1921,27 +1928,16 @@ footer {
   }
 
   .logo-anx-white-visual {
-    width: 280px;
+    width: 180px;
     padding-top: 7rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
   }
 
-  .section-spotify-canvas {
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 80%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  div.color {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-  }
-
-  .color {
-    width: 50%;
-    float: left;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    justify-content: center;
+    align-items: center;
   }
 
   .promo-grid {
@@ -1961,6 +1957,31 @@ footer {
   .spotify-canvas {
     width: 349px;
     height: 600px;
+  }
+
+  .spotify-canvas-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .div-frame{
+    border-bottom: 0px rgb(150, 160, 167) solid;
+  }
+
+  .h2-visual-introduction {
+    font-size: 0.9vw;
+  }
+
+  .h2-visual-poster{
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-style: var(--font-italic);
+    font-size: 1.6vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+    margin-bottom:0.5rem;
   }
 
   /* ------------------- Posters ------------------- */
@@ -2000,15 +2021,15 @@ footer {
   /* ------------------- Music ------------------- */
 
   .logo-space-dark {
-    width: 500px;
+    width: 19vw;
   }
 
   .h2-music {
-    font-size: 2.8rem;
+    font-size: 1.6vw;
   }
 
   .logo-anx-dark {
-    width: 220px;
+    width: 10vw;
   }
 
   .iframe-spacerush {
@@ -2095,39 +2116,25 @@ footer {
 
   .about-flexbox {
     display: flex;
-    padding-top: 5rem;
-  }
-
- .aboutme-leftside {
-  margin-top: 10rem;
- }
-
-  .aboutme-rightside {
-    margin-top: 10rem;
-    margin-right: 10rem;
+    gap: 5rem;
   }
 
   .h2-myname {
-  font-size: 3rem;
-  padding-left: 9rem;
+  font-size: 1.3vw;
+  padding-left: 1rem;
   padding-top: 1rem;
   text-align: start;
   }
 
   .h2-hello {
-    font-size: 3.8em;
+    font-size: 2vw;
     margin-top: 1rem;
-  }
-
-  .aboutme-text-container {
-    width: 40vw;
   }
 
   .img-oliver-container {
-    margin-top: 1rem;
     position: relative;
-    width: 69%;
-    height: 80%;
+    width: 23vw;
+    
     margin-left: auto;
     margin-right: auto;
     border-radius: var(--rounded);
@@ -2136,7 +2143,7 @@ footer {
 
   .aboutme-text-container {
     margin-inline: 1rem;
-    height: 60vh;
+    height: 85%;
     width: 44vw;
     padding-left: 1rem;
     padding-right: 15rem;
@@ -2146,13 +2153,15 @@ footer {
 
   .h1-cv {
     padding-top: 12rem;
-    font-size: 4rem;
-    margin-inline: 3rem;
-    padding-bottom: 0.5rem;
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 10vh;
   }
 
   .h2-text-intro {
-    font-size: 4em;
+    font-size: 2vw;
     padding-top: 1rem;
     padding-bottom: 1.4rem;
     padding-left: 1rem;
@@ -2161,12 +2170,13 @@ footer {
   .p-aboutme {
     padding-right: 0.9rem;
     padding-left: 1rem;
-    font-size: 2rem;
+    font-size: 1.4vw;
     padding-bottom: 1rem;
+    line-height: 1.6;
   }
 
   .p-groups {
-    font-size: 1.5em;
+    font-size: 1.8vw;
   }
 
   .img-green-alien {
@@ -2179,48 +2189,58 @@ footer {
     padding-right: 1rem;
   }
 
+  .section-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .cv-cards-container {
     display: grid;
     grid-template-columns: 47% 47%;
     grid-template-rows: 42% 42%;
     justify-content: center;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0;
+    padding: 0;
   }
 
   .cv-box {
     background-color: var(--primary-light);
-    height: 92%;
-    width: 98%;
+    height: 25vh;
+    width: 32vw;
     border-radius: var(--rounded);
     border: 1px solid #707070;
-    padding-left: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 4vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
 
   .h2-cv {
-    font-size: 3rem;
+    font-size: 1.8vw;
     padding-top: 1rem;
   }
 
   .h2-cv-multimedia {
-    font-size: 2.8rem;
+    font-size: 1.8vw;
   }
   
   .h2-cv-hhx {
-    font-size: 2.6rem;
+    font-size: 1.8vw;
   }
   
   .h3-cv {
-    font-size: 2.1rem;
+    font-size: 1.2vw;
     padding-right: 16rem;
     line-height: 1.3em;
   }
   
   .p-cv {
-    font-size: 2.4rem;
+    font-size: 1.7vw;
   }
 
   /* ------------------- Footer ------------------- */
