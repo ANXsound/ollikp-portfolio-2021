@@ -1,0 +1,455 @@
+/*Styling af header*/
+header{
+    position: relative;
+    text-align: center;
+}
+.header-big{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+header img{
+    height: 7em;
+    margin-top: 3em;
+}
+
+/*Stevs Klint Image*/
+.container-klint{
+    height: 14rem;
+    width: 100vw;
+}
+
+.container-klint img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Stevns Klint Text*/
+.section-klint{
+    background-color: var(--light-text);
+    padding-bottom: 8rem;
+}
+
+.section-klint h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.section-klint hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.section-klint p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/*Rone Klint Image*/
+.container-rone{
+    height: 14rem;
+    width: 100vw;
+}
+
+.container-rone img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Rone Klint text*/
+.section-rone{
+    background-color: var(--grey);
+    padding-bottom: 8rem;
+}
+
+.section-rone h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.section-rone hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.section-rone p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/*Camp Adventure Image*/
+.container-adventure{
+    height: 14rem;
+    width: 100vw;
+}
+
+.container-adventure img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Camp Adventure Text*/
+.section-adventure{
+    background-color: var(--light-text);
+    padding-bottom: 8rem;
+}
+
+.section-adventure h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.section-adventure hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.section-adventure p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/*Feddet Image*/
+.container-feddet{
+    height: 14rem;
+    width: 100vw;
+}
+
+.container-feddet img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Feddet text*/
+.section-feddet{
+    background-color: var(--grey);
+    padding-bottom: 8rem;
+}
+
+.section-feddet h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.section-feddet hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.section-feddet p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/*Oremandsgaard Image*/
+.container-oremandsgaard{
+    height: 14rem;
+    width: 100vw;
+}
+
+.container-oremandsgaard img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Oremandsgaard Text*/
+.section-oremandsgaard{
+    background-color: var(--light-text);
+    padding-bottom: 8rem;
+}
+
+.section-oremandsgaard h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.section-oremandsgaard hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.section-oremandsgaard p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 744px){
+    .header-big{
+        font-size: 4em;
+        top: 2.2em;
+    }
+    header img{
+        height: 9em;
+    }
+    .gridcontainer section p{
+        font-size: 1.2em;
+    }
+    .gridcontainer section h3{
+        font-size: 1.6em;
+    }
+    .gridcontainer section{
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+}
+
+/* Media Query for Web */
+@media only screen and (min-width: 1150px) {
+    /*'html, body' side scroll fix fundet på https://stackoverflow.com/questions/17756649/disable-the-horizontal-scroll */
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    header img{
+        height: 14em;
+    }
+    .header-big{
+        font-size: 6em;
+        margin-top: -1.2em;
+        top: 3.3em;
+    }
+    
+    .gridcontainer section{
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+    }
+
+    
+    .container-klint {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .container-klint img {
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .container-rone {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .container-rone img {
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .container-adventure {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .container-adventure img {
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .container-feddet {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .container-feddet img {
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .container-oremandsgaard {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        width: 50vw;
+        height: 100%;
+        position: relative;
+    }
+    .container-oremandsgaard img {
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* --- Stevns Klint --- */
+    .section-klint{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-bottom: 3rem;
+    }
+    .section-klint h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
+    }
+    .section-klint hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    .section-klint p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* --- Rone Klint Strand --- */
+    .section-rone{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-left: 0;
+        padding-bottom: 3rem; 
+    }
+    .section-rone h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
+    }
+    .section-rone hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    .section-rone p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* --- Camp Adventure --- */
+    .section-adventure{
+        grid-column:2/3;
+        grid-row: 3/4;
+        padding-bottom: 3rem;
+    }
+    .section-adventure h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
+    }
+    .section-adventure hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    .section-adventure p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+    /* --- Camp Adventure --- */
+    .section-feddet{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding-bottom: 3rem;
+    }
+    .section-feddet h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
+    }
+    .section-feddet hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    .section-feddet p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* --- Oremandsgaard Gods --- */
+    .section-oremandsgaard{
+        grid-column: 2/3;
+        grid-row: 5/6;
+        padding-bottom: 3rem;
+    }
+    .section-oremandsgaard h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
+    }
+    .section-oremandsgaard hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    .section-oremandsgaard p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,433 @@
+*{
+    margin: 0px;
+    font-family: parisplus-clair;
+    box-sizing: border-box;
+}
+/*Styling af header*/
+.header-green{
+    position: relative;
+    text-align: center;
+}
+.header-big-green{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+.header-green img{
+    height: 7em;
+    margin-top: 3em;
+}
+.lang-titel{
+    font-size: 9vw;
+}
+/**,
+*::before,
+*::after {
+    box-sizing: border-box;
+}*/
+body{
+    background-color: var(--light-text);
+    margin: 0;
+}
+
+.question p{
+    color: var(--light-green);
+    font-style: italic;
+    font-weight: 700;
+}
+
+/*Stylin*/
+.header-small{
+    top: 45%;
+}
+
+/* Taget fra w3school - Link:https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
+/* Positionerer slideshowet (Skal bruges til at positionere højre/venstre arrows) */
+.slideshow {
+  position: relative;
+  background-color: var(--light-text);
+}
+
+/* Gemmer billederne som der vises */
+.mySlides {
+  display: none;
+}
+
+div.mySlides{
+    margin: -0.2rem;
+}
+
+/* Cursoren bliver til en pointer når man hover over billederne */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous knapperne */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: -150px;
+  color: black;
+  background-color: var(--light-text);
+  opacity: 0.5;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Next knappen til højre */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Der er hover på knapperne */
+.prev:hover,
+.next:hover {
+  background-color: var(--light-green);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Columns er side by side */
+.column {
+  float: left;
+  width: 20%;
+}
+/* Her slutter CSS koden fra w3school*/
+
+/* Her begynder styling til første section: værelses-info */
+.vaerelses-info{
+    background-color: var(--light-text);
+}
+
+.vaerelses-info h4{
+    font-size: 1rem;
+    font-family: var(--sans-serif-regular);
+    font-style: italic;
+    font-weight: 20;
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+}
+
+.vaerelses-info h3{
+    padding-top: 1.8rem;
+    color: var(--light-green);
+    font-size: 1.5em;
+    font-family: var(--sans-serif);
+    font-weight: 20;
+}
+
+.vaerelses-info hr{
+    margin-top: 0.9rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.vaerelses-info p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+.pris{
+    margin-top: 0;
+}
+.under-knap-info{
+    padding-top: 2rem;
+    float: right;
+    text-align: right;
+    margin-right: -12rem;
+}
+
+.Faciliteter{
+    margin-top: 3rem;
+}
+
+.Faciliteter h3{
+    padding-top: 1.8rem;
+    color: var(--light-green);
+    font-size: 1.5em;
+    font-family: var(--sans-serif);
+    font-weight: 20;
+}
+
+.Faciliteter hr{
+    margin-top: 0.9rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.Faciliteter p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/* Grid system til faciliteterne */
+
+.facilitet-grid{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+.bad{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.room{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.ekstra{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.udendors{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+/* ---------- her begynder kodning til main-værelse (vaerelser.html) --------- */
+
+.room-pris{
+    text-decoration: none;
+    color: var(--dark-brown);
+    background-color: var(--grey);
+    font-size: 1.15rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-left: 3.1rem;
+    padding-right: 0.8rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    float: right;
+    margin-right: 0.5rem;
+    border-bottom-left-radius: 60px;
+}
+
+.room-se-mere{
+    text-decoration: none;
+    color: var(--light-text);
+    background-color: var(--light-green);
+    font-size: 1.15rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-left: 0.8rem;
+    padding-right: 3.1rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    float: right;
+    margin-right: 0.5rem;
+    border-bottom-right-radius: 60px;
+}
+
+.room-img{
+    width: 100vw;
+    height: 35vh;
+}
+
+.flex-vaerelser{
+    margin: 0;
+}
+
+/* Styling til afbestillingsreglerne */
+.readmore{
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+.readmore h4{
+    font-size: 1.1rem;
+    margin-left: 0rem;
+}
+.cancelling{
+    padding-top: 1rem;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.arrow{
+    height: max-content;
+}
+
+span{
+    display: none;
+    color: var(--dark-brown);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 744px) {
+    .header-big-green{
+        font-size: 4em;
+        top: 2.2em;
+    }
+    .header-green img{
+        height: 9em;
+    }
+    .flex-vaerelser p{
+        font-size: 1.2rem;
+        padding-left: 3rem;
+    }
+    .flex-vaerelser h3{
+        font-size: 1.6rem;
+        margin-left: 0;
+    }
+    .flex-vaerelser h4, .flex-vaerelser hr{
+        margin-left: 0;
+    }
+    .readmore{
+        margin-left: 0rem;
+        font-size: 1.2rem;
+    }
+    .readmore h4{
+        font-size: 1.3rem;
+    }
+    .flex-vaerelser{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .facilitet-grid{
+        margin: 2rem;
+    }
+
+}
+
+/* Media Query for Web */
+@media only screen and (min-width: 1150px) {
+    .header-green img{
+        height: 14em;
+    }
+    .header-big-green{
+        font-size: 6em;
+        margin-top: -1.2em;
+        top: 3.3em;
+    }
+
+    .slideshow{
+        width: 50vw;
+        float: left;
+    }
+
+    .prev,
+    .next {
+        padding: 20px;
+        font-size: 50px;
+        margin-top: -290px;
+    }
+
+    div.mySlides{
+        margin-bottom: 1rem;
+    }
+
+    .row img{
+        padding: 0.4rem;
+    }
+
+    .section-columns{
+        display: flex;
+    }
+
+    .flex-vaerelser{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+    .flex-vaerelser h3{
+        font-size: 1.9rem;
+    }
+    div.flex-vaerelser{
+        margin: 0;
+        padding-left: 2.5rem;
+        margin-right: 0;
+    }
+
+    .vaerelses-info{
+        float: right;
+    }
+    
+    .vaerelses-info h4{
+        font-size: 1em;
+    }
+
+    .vaerelses-info p{
+        font-size: 1.3em;
+        color: var(--dark-brown);
+    }
+
+    .Faciliteter{
+
+        float: right;
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .Faciliteter p{
+        font-size: 1.3em;
+    }
+
+    .Faciliteter h3{
+        padding: 0;
+        font-size: 1.9rem;
+    }
+    .Faciliteter h4{
+        font-size: 1.6rem;
+    }
+
+    .pris{
+        padding-left: 3.3rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        float: right;
+        margin-right: 2.5rem;
+        margin-top: 2rem;
+        font-size: 1.3em;
+    }
+
+    .under-knap-info{
+        padding-top: 5rem;
+    }
+    .vaerelses-info .under-knap-info{
+        padding-right: 0;
+    }
+    /* Styling til afbestillingsreglerne */
+    .readmore{
+        margin-left: 0rem;
+        font-size: 1.3rem;
+    }
+    .readmore h4{
+        font-size: 1.6rem;
+    }
+
+
+}

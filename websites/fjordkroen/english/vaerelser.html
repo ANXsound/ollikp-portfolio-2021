@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="stylesheet" href="../css/vaerelser.css" type="text/css">
+        <link rel="stylesheet" href="../css/main-vaerelser.css" type="text/css">
+        <title>Hotel Fjordkroen - Rooms</title>
+        <link rel="icon" href="img/logo-icon.webp">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <!--Navbar/checkbox-->
+        <script src="https://kit.fontawesome.com/b5a42e777e.js" crossorigin="anonymous"></script>
+        <!--SEO-->
+        <meta name="keywords" content="Restaurant, Hotel, Rooms, facilities, free-wifi, Free breakfest, hotelroom, sleep, double bed, terrace, view">
+        <meta name="description" content="View our hotel rooms and read about what we offer in terms of facilities, size of rooms and more. We have several different rooms for you to choose from.">
+        <!--Fonts-->
+        <link rel="stylesheet" href="https://use.typekit.net/zgy3mli.css">
+        <link rel="stylesheet" href="https://use.typekit.net/xko4pqh.css">
+    </head>
+<body>
+    <!-- Mobile Navigation Bar // KILDE: Referencen til mobilnavbaren m. checkbox systemet er genbrugt fra Selin Güzel Kirkans tidligere 1. semesters examprojekt (Portfolio) og er tilpasset til denne side. Koden findes i linjerne 18-31 --> 
+    <input type="checkbox" id="checkbox">   
+    <nav class="mobile-nav">
+
+        <a href="index.html"><img src="../img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" width="632" height="157"></a>
+        <div class="flags-and-burger">
+            <a class="a-flag-mobile" href="../vaerelser.html"><img src="../img/dansk-flag.svg" class="top-bar-flag" alt="Change to Danish language"></a>
+            <a class="a-flag-mobile" href="vaerelser.html"><img src="../img/engelsk-flag.svg" class="top-bar-flag" alt="Change to English language"></a>
+            <label for="checkbox">
+                <i class="fas fa-bars fa-x2"></i>
+            </label>
+        </div>
+        
+            <ul class="dropdown-content">
+                <li><a href="index.html">Home</a></li>
+                <li class="underline"><a href="restaurant.html">Restaurant</a></li>
+                <li class="mobile-sub-page"><a href="menukort.html">Menu</a></li>
+                <li class="mobile-sub-page"><a href="vinkort.html">Wine Menu</a></li>
+                <li><a href="vaerelser.html">Rooms</a></li>
+                <li><a href="kro-ophold.html">Stays</a></li>
+                <li><a href="selskaber.html">Events</a></li>
+                <li class="underline"><a href="#" id="underline">Info</a>
+                <li class="mobile-sub-page"><a href="praktiske-oplysninger.html">Practical Information</a></li>
+                <li class="mobile-sub-page"><a href="lokale-seværdigheder.html">Local Attractions</a></li>
+                <li class="mobile-sub-page"><a href="faq.html">FAQ</a></li>
+                <li class="dropdown-phone"><img src="../img/icon-phone.png" alt="Phone icon"><a class="callerlink" href="tel:+4555965810">Tlf +45 55 96 58 10</a></li>
+            </ul>
+    </nav>
+
+
+    <!-- Web Navigation Bar-->
+    <nav class="web-nav">
+        <a href="index.html"><img src="../img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" width="632" height="157"></a>
+        <ul class="nav-links">
+            <li>
+            <ul class="subnav">
+                <li><a class="subnavbtn" href="restaurant.html">Restaurant<i class="fa fa-caret-down"></i></a></li>
+                <li class="subnav-content restaurant-sub-nav">
+                  <a href="menukort.html">Menu</a>
+                  <a href="vinkort.html">Wine Menu</a>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <ul class="nav-link">
+                <li class="web-nav-li"><a href="vaerelser.html">Rooms</a></li>
+                <li class="web-nav-li"><a href="kro-ophold.html">Stays</a></li>
+                <li class="web-nav-li"><a href="selskaber.html">Events</a></li>
+            </ul> 
+            </li>
+            <li>
+            <ul class="subnav">
+                <li><a class="subnavbtn">Info<i class="fa fa-caret-down"></i></a></li>
+                <li class="subnav-content info-sub-nav">
+                    <a href="praktiske-oplysninger.html">Practical Information</a>
+                    <a href="lokale-seværdigheder.html">Local Attractions</a>
+                    <a href="faq.html">FAQ</a>
+                </li>
+            </ul>
+            </li>
+        </ul>
+        <!-- Only flags er kun aktiv ved en skærmbredde imellem 960px og 1650px-->
+        <div class="only-flags">
+            <a class="a-flag" href="../vaerelser.html"><img src="../img/dansk-flag.svg" class="top-bar-flag" alt="Change to Danish language"></a>
+            <a class="a-flag" href="vaerelser.html"><img src="../img/engelsk-flag.svg" class="top-bar-flag" alt="Change to English language"></a>
+        </div>
+        <!-- Top-Bar med telefon nummer og Valg af sprog-->
+        <div class="top-bar">
+            <img src="../img/icon-phone.png" class="top-bar-phone" alt="Phone icon" width="37" height="37">
+            <p>+45 55 96 58 10</p>
+            <div></div>
+            <a class="a-flag" href="../vaerelser.html"><img src="../img/dansk-flag.svg" class="top-bar-flag" alt="Change to Danish language"></a>
+            <a class="a-flag" href="vaerelser.html"><img src="../img/engelsk-flag.svg" class="top-bar-flag" alt="Change to English language"></a>
+        </div>
+    </nav>
+
+    <!-- Alt nav relateret slutter her -->
+
+    <header>
+        <img src="../img/værelser/vaerelser-header.webp" alt="Picture of a hallway leading to the hotel rooms on Hotel Fjordkroen" width="3840" height="2555">
+        <h1 class="header-big">Rooms</h1>
+        <h2 class="header-small">Enjoy a lovely stay at our 4-star hotel, <br> with a view of Præstø Fjord</h2>
+    </header>
+
+    <div class="room-container">
+        <section class="rooms-before">
+            <section class="room-info-ophold">
+                <h3>Stays</h3>
+                <hr>
+                <p>Our rooms are furnished in a classic style - with cozy interiors - and various facilities. 
+                    Most of our rooms have a view of the beautiful Præstø Fjord, and several rooms have a terrace or balcony. 
+                    <br><br>Enjoy an overnight stay - with top-notch service - by booking our coveted Stays.
+                </p>        
+            </section>
+                
+            <section class="room-book-tlf">
+                <h3>Call and Book a Stay </h3>
+                <hr>
+                <p>
+                    <img src="../img/icon-phone-green.png" class="top-bar-phone" alt="Phone icon" width="100" height="100">
+                    <a class="callerlink" href="tel:+4555965810">+45 55 96 58 10</a>
+                    <br>Best met at 14-16 every day
+                </p> 
+            </section>
+        </section>
+        
+        <section class="room-1">
+            <a href="Vaerelser/dobbeltvaerelse.html"><img class="room-img" src="../img/værelser/dobbeltværelse.webp" alt="Double room with a view over the fjord and its own terrace"></a>
+            <div class="ikon-saet-rooms">
+                <div class="ikon-saet">
+                    <img src="../img/værelser/wifiikon.png" alt="Free Wifi icon" width="37" height="37">
+                    <p class="free-wifi">Free WiFi</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nosmokingikon.webp" alt="No smoking icon" width="37" height="37">
+                    <p>No smoking</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nodogsikon.webp" alt="No pets icon" width="37" height="37">
+                    <p>No dogs</p>
+                </div>
+            </div>
+            <div class="room-info">
+                <a href="Vaerelser/dobbeltvaerelse.html"><h2>Double room with a view of the fjord and a private terrace</h2></a>
+                <hr>
+                <p>A charming standard room with a double bed and a view of the fjord and a private terrace. With plenty of space for two people and many facilities for every day.</p>
+                <div class="ikon-saet-info">
+                    <div class="ikon-p antal-personer">
+                        <img class="pers" src="../img/værelser/antalpersonerikon.png" alt="Amount of people icon" width="40" height="30">
+                        <p class="to-personer">2 person</p>
+                    </div>
+                    <div class="ikon-p stoerrelse">
+                        <img src="../img/værelser/strrumikon.png" alt="Size of room icon" width="35" height="30">
+                        <p>16m<sup>2</sup></p>
+                    </div>
+                    <div class="vaerelser-knapper">
+                        <p>Incl. Breakfast / per night</p>
+                        <a href="Vaerelser/dobbeltvaerelse.html" class="room-se-mere">Read more</a>
+                        <div class="room-pris">1145,00 DKK</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="room-2">
+            <a href="Vaerelser/Deluxe-dobbelt.html"><img class="room-img" src="../img/værelser/dobbeltdeluxe1.jpg" alt="Deluxe Double Room with a view of the fjord and a private terrace"></a>
+            <div class="ikon-saet-rooms">
+                <div class="ikon-saet">
+                    <img src="../img/værelser/wifiikon.png" alt="Free Wifi" width="37" height="37">
+                    <p>Free WiFi</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nosmokingikon.webp" alt="No smoking icon" width="37" height="37">
+                    <p>No smoking</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nodogsikon.webp" alt="No pets icon" width="37" height="37">
+                    <p>No dogs</p>
+                </div>
+            </div>
+            <div class="room-info">
+                <a href="Vaerelser/Deluxe-dobbelt.html"><h2>Deluxe Double Room with a view of the fjord and a private terrace</h2></a>
+                <hr>
+                <p>With our beautiful deluxe rooms, you get a little more space than the standard room. These rooms include a 
+                    private bath and toilet, minibar, internet, flat screen, and hairdryer. There will be coffee & tea 
+                    available. The rooms also have a nice terrace overlooking the fjord.</p>
+                <div class="ikon-saet-info">
+                    <div class="ikon-p antal-personer">
+                        <img class="pers" src="../img/værelser/antalpersonerikon.png" alt="Amount of people icon" width="40" height="30">
+                        <p class="to-personer">2 person</p>
+                    </div>
+                    <div class="ikon-p stoerrelse">
+                        <img src="../img/værelser/strrumikon.png" alt="Size of room icon" width="35" height="30">
+                        <p>19m<sup>2</sup></p>
+                    </div>
+                    <div class="vaerelser-knapper">
+                        <p>Incl. Breakfast / per night</p>
+                        <a href="Vaerelser/Deluxe-dobbelt.html" class="room-se-mere">Read more</a>
+                        <div class="room-pris grey">1245,00 DKK</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="room-3">
+            <a href="Vaerelser/standard-dobbelt-vaerelse.html"><img class="room-img" src="../img/værelser/fællesbadstandard.webp" alt="Standard Double Room with Shared Bathroom"></a>
+            <div class="ikon-saet-rooms">
+                <div  class="ikon-saet">
+                    <img src="../img/værelser/wifiikon.png" alt="Free Wifi" width="37" height="37">
+                    <p>Free WiFi</p>
+                </div>
+                <div  class="ikon-saet">
+                    <img src="../img/værelser/nosmokingikon.webp" alt="No smoking icon" width="37" height="37">
+                    <p>No smoking</p>
+                </div>
+                <div  class="ikon-saet">
+                    <img src="../img/værelser/nodogsikon.webp" alt="No pets icon" width="37" height="37">
+                    <p>No dogs</p>
+                </div>
+            </div>
+            <div class="room-info">
+                <a href="Vaerelser/standard-dobbelt-vaerelse.html"><h2>Standard Double Room with Shared Bathroom</h2></a>
+                <hr>
+                <p>Nice standard rooms with double beds. This room shares a bathroom with other standard double rooms in the hallway. 
+                    However, the rooms include a flat-screen TV, coffee/tea bar, and many more amenities.</p>
+                <div class="ikon-saet-info">
+                    <div class="ikon-p antal-personer">
+                        <img class="pers" src="../img/værelser/antalpersonerikon.png" alt="Antal Personer" width="40" height="30">
+                        <p class="to-personer">2 person</p>
+                    </div>
+                    <div class="ikon-p stoerrelse">
+                        <img src="../img/værelser/strrumikon.png" alt="Size of room icon" width="35" height="30">
+                        <p>10m<sup>2</sup></p>
+                    </div>
+                    <div class="vaerelser-knapper">
+                        <p>Incl. Breakfast / per night</p>
+                        <a href="Vaerelser/standard-dobbelt-vaerelse.html" class="room-se-mere">Read more</a>
+                        <div class="room-pris">895,00 DKK</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="room-4">
+            <a href="Vaerelser/Deluxe-standard-dobbeltvaerelse.html"><img class="room-img" src="../img/værelser/fællesbaddeluxe.jpg" alt="Deluxe Standard Double Room with Shared Bathroom"></a>
+            <div class="ikon-saet-rooms">
+                <div class="ikon-saet">
+                    <img src="../img/værelser/wifiikon.png" alt="Free Wifi" width="37" height="37">
+                    <p>Free WiFi</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nosmokingikon.webp" alt="No smoking icon" width="37" height="37">
+                    <p>No smoking</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nodogsikon.webp" alt="No pets icon" width="37" height="37">
+                    <p>No dogs</p>
+                </div>
+            </div>
+            <div class="room-info">
+                <a href="Vaerelser/Deluxe-standard-dobbeltvaerelse.html"><h2>Deluxe Standard Double Room with Shared Bathroom</h2></a>
+                <hr>
+                <p>In these deluxe standard rooms, you get more space than the standard rooms. These rooms also include amenities such as 
+                    a flat-screen TV, coffee/tea bar, and many more amenities.</p>
+                <div class="ikon-saet-info">
+                    <div class="ikon-p antal-personer">
+                        <img class="pers" src="../img/værelser/antalpersonerikon.png" alt="Amount of people icon" width="40" height="30">
+                        <p class="to-personer">2 person</p>
+                    </div>
+                    <div class="ikon-p stoerrelse">
+                        <img src="../img/værelser/strrumikon.png" alt="Size of room icon" width="35" height="30">
+                        <p>14m<sup>2</sup></p>
+                    </div>
+                    <div class="vaerelser-knapper">
+                        <p>Incl. Breakfast / per night</p>
+                        <a href="Vaerelser/Deluxe-standard-dobbeltvaerelse.html" class="room-se-mere">Read more</a>
+                        <div class="room-pris grey">995,00 DKK</div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="room-5">
+            <a href="Vaerelser/junior-suite-balkon.html"><img class="room-img" src="../img/værelser/jrsuitebalkon2.webp" alt="Junior Suite with balcony and view of the fjord"></a>
+            <div class="ikon-saet-rooms">
+                <div class="ikon-saet">
+                    <img src="../img/værelser/wifiikon.png" alt="Free Wifi" width="37" height="37">
+                    <p>Free WiFi</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nosmokingikon.webp" alt="No smoking icon" width="37" height="37">
+                    <p>No smoking</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nodogsikon.webp" alt="No pets icon" width="37" height="37">
+                    <p>No dogs</p>
+                </div>
+            </div>
+            <div class="room-info">
+                <a href="Vaerelser/junior-suite-balkon.html"><h2>Junior Suite with balcony</h2></a>
+                <hr>
+                <p>The spacious Junior Suites are decorated in comfortable surroundings. With double bed, en suite bathroom, flat-screen TV, and many more amenities available. 
+                    With the beautiful balcony, you can look out over the hotel's beautiful environment.</p>
+                <div class="ikon-saet-info">
+                    <div class="ikon-p antal-personer">
+                        <img class="pers" src="../img/værelser/antalpersonerikon.png" alt="Amount of people icon" width="40" height="30">
+                        <p class="to-personer">2 person</p>
+                    </div>
+                    <div class="ikon-p stoerrelse">
+                        <img src="../img/værelser/strrumikon.png" alt="Size of room icon" width="35" height="30">
+                        <p>25m<sup>2</sup></p>
+                    </div>
+                    <div class="vaerelser-knapper">
+                        <p>Incl. Breakfast / per night</p>
+                        <a href="Vaerelser/junior-suite-balkon.html" class="room-se-mere">Read more</a>
+                        <div class="room-pris">1345,00 DKK</div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="room-6">
+            <a href="Vaerelser/junior-suite-udsigt.html"><img class="room-img" src="../img/værelser/jrsuiteudsigt2.webp" alt="Junior Suite with a view of the fjord "></a>
+            <div class="ikon-saet-rooms">
+                <div class="ikon-saet">
+                    <img src="../img/værelser/wifiikon.png" alt="Free Wifi" width="37" height="37">
+                    <p>Free WiFi</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nosmokingikon.webp" alt="No smoking icon" width="37" height="37">
+                    <p>No smoking</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nodogsikon.webp" alt="No pets icon" width="37" height="37">
+                    <p>No dogs</p>
+                </div>
+            </div>
+            <div class="room-info">
+                <a href="Vaerelser/junior-suite-udsigt.html"><h2>Junior Suite with a view of the fjord</h2></a>
+                <hr>
+                <p>The spacious Junior Suites are decorated in comfortable surroundings. 
+                    With double bed, en suite bathroom, flat-screen TV, and many more amenities available. 
+                    Enjoy your morning with a beautiful view of the fjord.</p>
+                <div class="ikon-saet-info">
+                    <div class="ikon-p antal-personer">
+                        <img class="pers" src="../img/værelser/antalpersonerikon.png" alt="Amount of people icon" width="40" height="30">
+                        <p class="to-personer">2 person</p>
+                    </div>
+                    <div class="ikon-p stoerrelse">
+                        <img src="../img/værelser/strrumikon.png" alt="Size of room icon" width="35" height="30">
+                        <p>31m<sup>2</sup></p>
+                    </div>
+                    <div class="vaerelser-knapper">
+                        <p>Incl. Breakfast / per night</p>
+                        <a href="Vaerelser/junior-suite-udsigt.html" class="room-se-mere">Read more</a>
+                        <div class="room-pris grey">1345,00 DKK</div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="room-7">
+            <a href="Vaerelser/suite.html"><img class="room-img" src="../img/værelser/suite1.webp" alt="Big suite with private garden"></a>
+            <div class="ikon-saet-rooms">
+                <div class="ikon-saet">
+                    <img src="../img/værelser/wifiikon.png" alt="Free Wifi" width="37" height="37">
+                    <p>Free WiFi</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nosmokingikon.webp" alt="No smoking icon" width="37" height="37">
+                    <p>No smoking</p>
+                </div>
+                <div class="ikon-saet">
+                    <img src="../img/værelser/nodogsikon.webp" alt="No pets icon" width="37" height="37">
+                    <p>No dogs</p>
+                </div>
+            </div>
+            <div class="room-info">
+                <a href="Vaerelser/suite.html"><h2>Suite</h2></a>
+                <hr>
+                <p>Enjoy a 33m2 suite consisting of 2 beautiful rooms and a large covered terrace with direct views of Præstø Fjord. 
+                    There is a large private garden with natural surroundings and a large separate bathroom etc.</p>
+                <div class="ikon-saet-info">
+                    <div class="ikon-p antal-personer">
+                        <img class="pers" src="../img/værelser/antalpersonerikon.png" alt="Amount of people icon" width="40" height="30">
+                        <p class="to-personer">2 personer</p>
+                    </div>
+                    <div class="ikon-p stoerrelse">
+                        <img src="../img/værelser/strrumikon.png" alt="Size of room icon" width="35" height="30">
+                        <p>33m<sup>2</sup></p>
+                    </div>
+                    <div class="vaerelser-knapper">
+                        <p>Incl. Breakfast / per night</p>
+                        <a href="Vaerelser/suite.html" class="room-se-mere">Read more</a>
+                        <div class="room-pris">1495,00 DKK</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-contact">
+            <div class="first">
+                <h2 class="footer-underscore">Contact</h2>
+                <p>Phone:</p>
+                <p>+45 55 96 58 10</p>
+                <p>E-Mail:</p>
+                <p>mail@fjordkroen.com</p>
+            </div>
+            <div class="second">
+                <h2 class="footer-underscore">Address</h2>
+                <p>Bækkeskov Stræde 23</p>
+                <p>4733, Tappernøje</p>
+            </div>
+            
+            <div class="footer-time">
+                <h2 class="footer-opening footer-underscore">Opening Hours</h2>
+                <section class="third">
+                    <h2>Reception</h2>
+                    <p>Mon-Fri: 14-21</p>
+                    <p>Sat-Sun: 14-21</p>
+                </section>
+                <section class="third third-rest">
+                    <h2>Restaurant</h2>
+                    <p>Mon-Fri: 17-21</p>
+                    <p>Sat-Sun: 12-21</p>
+                </section>
+            </div>
+
+            <div class="footer-some-icons">
+                <a href="https://www.facebook.com/HotelFjordkroen" target="_blank"><img src="../../img/fb-icon.png" alt="A Facebook icon, that navigates to our Facebook page, when you click on it" width="53" height="53"></a>
+                <a href="#" target="_blank"><img src="../../img/insta-icon.png" alt="An Instagram icon, that navigates to our Instagram page, when you click on it" width="53" height="53"></a>
+                <a href="https://www.findsmiley.dk/953758" target="_blank"><img src="../../img/elite-smiley.png" alt="An elite smiley rating from the Danish Veterinary and Food Administration, that you can click on to show the full rapport of Hotel Fjordkroen" width="66" height="60"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../javascript/main.js"></script>
+</body>
+</html>

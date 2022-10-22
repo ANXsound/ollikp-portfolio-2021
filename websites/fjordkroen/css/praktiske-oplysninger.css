@@ -1,0 +1,366 @@
+
+
+/*Styling af header*/
+header{
+    position: relative;
+    text-align: center;
+}
+.header-big{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+header img{
+    height: 7em;
+    margin-top: 3em;
+}
+
+/*Styling af '.index-opening', 'index-opening h3' & 'index-opening h4' kommer fra css/style.css*/
+
+
+/* Find vej Interaktivt kort */
+#gmap_canvas {
+    width: 100vw;
+    height: 15rem;
+}
+
+.info-map{
+    background-color: var(--light-text);
+    padding-top: 2em;
+}
+
+/* Vejvisning */
+.info-where-to{
+    background-color: var(--light-text);
+    padding-bottom: 1rem;
+}
+
+.info-where-to h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.info-where-to hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.info-where-to p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/* Indtjekning og udtjekning */
+.info-checkout{
+    background-color: var(--grey);
+    padding-bottom: 1rem;
+}
+
+.info-checkout h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.info-checkout hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.info-checkout p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/* Billede af haven */
+.info-garden {
+    width: 100%;
+    height: 14rem;
+}
+
+.info-garden img{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/* For gangbesværet */
+.info-handicap{
+    background-color: var(--light-text);
+    padding-bottom: 1rem;
+}
+
+.info-handicap h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.info-handicap hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.info-handicap p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+.info-stemningsbilleder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--grey);
+}
+
+.info-stemningsbilleder img{
+    width: 18.938rem;
+    height: auto;
+}
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 744px){
+    .header-big{
+        font-size: 4em;
+        top: 2.2em;
+    }
+    header img{
+        height: 9em;
+    }
+    .gridcontainer section p{
+        font-size: 1.2rem;
+    }
+    .gridcontainer section h3{
+        font-size: 1.6rem;
+    }
+    .gridcontainer section h4{
+        font-size: 1.3rem;
+    }
+    .gridcontainer section{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+/* Media Query for Web */
+@media only screen and (min-width: 1150px) {
+    /*'html, body' side scroll fix fundet på https://stackoverflow.com/questions/17756649/disable-the-horizontal-scroll */
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    header img{
+        height: 14em;
+    }
+    .header-big{
+        font-size: 6em;
+        margin-top: -1.2em;
+        top: 3.3em;
+    }
+    .gridcontainer section p{
+        font-size: 1.3rem;
+    }
+    .gridcontainer .index-opening p{
+        font-size: 1.1rem;
+    }
+    .gridcontainer section h3{
+        font-size: 1.9rem;
+    }
+    .gridcontainer section h4{
+        font-size: 1.6rem;
+    }
+    .gridcontainer section{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60vh 60vh 65vh 50vh;
+    }
+    
+    /* Find vej Interaktivt kort */
+    .info-map{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    #gmap_canvas {
+        width: 50vw;
+        height: 800px;
+        margin-left: 0rem;
+    }
+
+    .index-opening{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-color: var(--light-text);
+    }
+    
+    /* Vejvisning */
+    .info-where-to{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 100%;
+    }
+    
+    .info-where-to h3{
+        font-size: 1.9rem;
+        padding-top: 4rem;
+        margin-left: 4.2rem;
+    }
+    
+    .info-where-to hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    
+    .info-where-to p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* Indtjekning & Udtjekning */
+    .info-checkout{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 100%;
+    }
+    
+    .info-checkout h3{
+        font-size: 1.9rem;
+        padding-top: 4rem;
+        margin-left: 4.2rem;
+    }
+    
+    .info-checkout hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    
+    .info-checkout p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* For gangbesværet */
+    .info-handicap{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: 100%;
+        background-color: var(--grey);
+    }
+    
+    .info-handicap h3{
+        font-size: 1.9rem;
+        padding-top: 4rem;
+        margin-left: 4.2rem;
+        color: var(--dark-green);
+    }
+    
+    .info-handicap hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    
+    .info-handicap p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* Billede af haven */
+    .info-garden {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info-garden img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .info-stemningsbilleder{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-color: var(--light-text);
+    }
+
+    .info-stemningsbilleder div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 100%;
+        position: relative;
+    }
+    
+    .info-stemningsbilleder img{
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .index-seven{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .index-seven img{
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

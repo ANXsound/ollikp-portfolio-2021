@@ -1,0 +1,1536 @@
+*{
+    margin: 0px;
+    font-family: parisplus-clair;
+}
+
+:root{
+    --dark-brown: #5C3F16;
+    --dark-green: #476948;
+    --light-text: #F0F0EB;
+    --light-green: #889B7F;
+    --grey: #d8d5cd;
+    --script: gioviale, sans-serif;
+    --sans-serif: parisplus-std, sans-serif;
+    --sans-serif-regular: parisplus-std, sans-serif;
+}
+
+
+/*Font-styling mobile*/
+h3{
+    color: var(--light-green);
+    font-size: 1.3em;
+    margin-left: 1em;
+}
+h4{
+    color: var(--dark-green);
+    font-size: 1.1em;
+    font-style: italic;
+    margin-left: 1.4em;
+}
+p{
+    color: var(--dark-brown);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+
+/* Nav-Bar */
+
+li{
+    display: inline;
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+/* Fas fa-bar svg'ets (burgermenu ikonet) indstillinger */
+.fas{
+    font-size: 2.2rem;
+    line-height: 45px;
+    float: right;
+    padding: 0.4rem;
+}
+
+nav{
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+.nav-logo{
+    width: 8.5rem;
+    height: auto;
+    margin-left: 0.7rem;
+    margin-top: 0.8rem;
+}
+
+.flags-and-burger{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 0.4rem;
+    position: relative;
+    margin-left: auto;
+    float: right;
+    color: var(--dark-brown);
+}
+
+/* UL indstillinger, bl.a. gør at vi har en transition på vores menu */
+nav ul{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    height: 100%;
+    z-index: 1;
+}
+
+li.underline a{
+    border-bottom: #C1BBAC 1px solid;
+}
+
+/* .under-menu li > a{
+    color: var(--light-green);
+    border-top: none;
+    padding-left: 4rem;
+    font-style: italic;
+    font-size: 1rem;
+} */
+
+li.mobile-sub-page a {
+    color: var(--light-green);
+    border-top: none;
+    padding-left: 4rem;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.mobile-nav {
+    background-color: var(--light-text);
+    margin-inline: 0;
+    z-index: +5;
+}
+
+.dropdown-content a {
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+    background-color: var(--light-text);
+    color: var(--dark-green);
+    font-size: 1rem;
+    text-decoration: none;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-top: #C1BBAC 1px solid;
+    padding-left: 2rem;
+}
+
+.dropdown-phone{
+    display: flex;
+    background-color: var(--light-text);
+    color: var(--dark-green);
+    justify-content: center;
+    align-items: center;
+    border-top: #C1BBAC 1px solid;
+    border-bottom: #C1BBAC 1px solid;
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+.dropdown-phone p{
+    color: var(--dark-green);
+    font-family: var(--sans-serif-regular);
+    font-weight: 200;
+}
+
+.dropdown-phone img{
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+.dropdown-phone a{
+    border: 0px;
+}
+
+/* Checkbox, som er burgermenu'ens indstillinger der gør at vores menu kommer ned når man klikker */
+#checkbox{
+    display: none;
+}
+
+#checkbox:checked ~ nav ul{
+    max-height: 100%;
+    width: 100vw;
+    transition: all 0.1s;
+}
+/* ------------------- Mobile navbar slutter ------------------- */
+
+/* Web Nav-Bar */
+
+.web-nav {
+    background-color: #F0F0EB;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    z-index: 5;
+  }
+  
+  /* Navigation links */
+  .web-nav a {
+    float: left;
+    font-size: 16px;
+    color: var(--dark-brown);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--dark-brown);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .web-nav a:hover, .subnav:hover .subnavbtn {
+    transform: scale(1.05)  
+}
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    margin-top: 14rem;
+    background-color: var(--light-text);
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    justify-content: center;
+    color: var(--dark-brown);
+    text-decoration: none;
+    padding-inline: 2rem;
+    z-index: 1;
+    text-align: start;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: var(--light-green);
+    color: rgb(255, 255, 255);
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: flex;
+    justify-content: center;
+  }
+
+.top-bar-phone{
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    width: 1.2rem;
+    height: auto;
+}
+
+.top-bar div{
+    height: 1rem;
+    width: 1px;
+    background-color: black;
+    margin-left: 1rem;
+    margin-right: 0.8rem;
+}
+
+.a-flag img{
+    margin: 0rem;
+    width: 2.2rem;
+    height: auto;
+}
+
+.a-flag-mobile img{
+    margin: 0.4rem;
+    width: 2.2rem;
+    height: auto;
+}
+
+.top-bar-flag{
+    margin: 0.4rem;
+    width: 2.2rem;
+    height: auto;
+}
+
+/* ------ her stopper Navigation styling ------ */
+
+/* ----- Her begynder Content -----*/
+
+/*Styling af header med titel*/
+header img{
+    width: 100%;
+    height: 59vh;
+    margin-top: 3rem;
+    object-fit: cover;
+}
+
+header{
+    margin-bottom: -4px;
+}
+
+.header-big{
+    font-family: var(--script);
+    font-size: 4rem;
+    color: var(--light-text);
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.header-small{
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--light-text);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* ----- Styling af content ----- */
+
+/*sætter ikon ved siden af tekst*/
+.text-icon-flex{
+    display: flex;
+    align-items: center;
+}
+
+/*Se mere knap*/
+.index-se-mere {
+    text-decoration: none;
+    color: var(--light-text);
+    background-color: var(--light-green);
+    font-size: 1.15rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-left: 3.1rem;
+    padding-right: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    border-bottom-left-radius: 60px;
+}
+
+.index-se-mere:hover {
+    background-color: var(--dark-green);
+}
+
+.index-se-mere:focus {
+    background-color: var(--dark-green);
+}
+
+/*Åbningstider*/
+.opening-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-opening{
+    background-color: var(--light-text);
+    height: 264px;
+    padding-left: 1.6rem;
+    padding-right: 1.2rem;
+}
+
+.index-opening h3{
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+    color: var(--light-green);
+    font-size: 1.3rem;
+    padding-top: 2.6rem;
+    margin-left: 0;
+}
+
+.index-opening h4{
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+    color: var(--dark-green);
+    font-size: 1.1rem;
+    padding-top: 1.7rem;
+    border-bottom: 1px solid var(--dark-green);
+    margin-left: 0;
+    margin-bottom: 0.6rem;
+}
+
+.opening-flex p{
+    font-size: 0.75rem;
+    line-height: 20px;
+}
+
+.opening-phone {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.opening-phone p{
+    font-size: 0.9rem;
+    color: var(--dark-green);
+    font-family: var(--sans-serif);
+    font-weight: 400;
+}
+
+.opening-phone img {
+    height: 1.6rem;
+    width: auto;
+    margin-right: 0.3rem;
+}
+
+.phone-info {
+    text-align: end;
+    font-size: 0.8rem;
+    color: var(--light-green);
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+}
+
+.callerlink{
+    font-size: 1rem;
+    margin: 7px 0px;
+    border: none;
+    color: var(--dark-green);
+    font-family: var(--sans-serif);
+    font-weight: 400;
+}
+
+/*Velkommen*/
+.index-welcome{
+    background-color: var(--grey);
+    height: 26.2rem;
+}
+
+.index-welcome h3{
+    padding-top: 1.2rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.index-welcome hr{
+    margin-top: 0.9rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.index-welcome p{
+    color: var(--dark-brown);
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.index-welcome-awards{
+    margin-left: 4rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-welcome-awards img {
+    margin-top: 1.6rem;
+    width: 3.5rem;
+    height: auto;
+}
+
+/*Hvem er vi - Billede*/
+    .index-aboutus-img{
+    height: 14rem;
+    width: 100%;
+}
+
+    .index-aboutus-img img{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Hvem er vi - Tekst*/
+.index-aboutus{
+    background-color: var(--light-text);
+    height: 30rem;
+}
+
+.index-aboutus h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.index-aboutus img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-aboutus hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-aboutus p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/*Restaurant - Billede*/
+.index-restaurant-img{
+    height: 14rem;
+    width: 100%;
+}
+
+.index-restaurant-img img{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Restaurant - Tekst*/
+.index-restaurant{
+    background-color: var(--grey);
+    height: 30rem;
+}
+
+.index-restaurant h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.index-restaurant img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-restaurant hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-restaurant p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/*Værelser - Billede*/
+.index-vaerelser-img{
+    height: 14rem;
+    width: 100%;
+}
+
+.index-vaerelser-img img{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Værelser - Tekst*/
+.index-vaerelser{
+    background-color: var(--light-text);
+    height: 23rem;
+}
+
+.index-vaerelser h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.index-vaerelser img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-vaerelser hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-vaerelser p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/*Selskaber - Billede*/
+.index-selskaber-img{
+    height: 14rem;
+    width: 100%;
+}
+
+.index-selskaber-img img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Selskaber - Tekst*/
+.index-selskaber{
+    background-color: var(--grey);
+    height: 30rem;
+}
+
+.index-selskaber h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.index-selskaber img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-selskaber hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-selskaber p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/*Find vej - Tekst*/
+.index-findus{
+    background-color: var(--light-text);
+    height: 18.5rem;
+}
+
+.index-findus h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.index-findus img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-findus hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-findus p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: -2rem;
+    font-size: 1rem;
+    color: var(--dark-brown);
+}
+
+/*Find Vej - Kort*/
+
+#gmap_canvas {
+    width: 100vw;
+    height: 15rem;
+    border: none;
+}
+
+/*Anmeldelser */
+.index-thirteen{
+    background-color: var(--grey);
+    height: 25.7rem;
+}
+
+.index-thirteen h3{
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.index-thirteen img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-thirteen hr{
+    margin-top: 0.7rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-thirteen p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/* Footer */
+
+.footer-contact{
+    background-color: var(--dark-green);
+    height: 38rem;
+    color: var(--light-text);
+    font-family: parisplus-clair, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2; 
+    padding: 2rem;
+    column-gap: 1rem;
+}
+
+.first{
+    grid-row-start: 1;
+    grid-row-end:  1;
+}
+
+.first h2{
+    border-bottom: 1px solid;
+}
+
+.second h2{
+    border-bottom: 1px solid;
+}
+
+.footer-time{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+}
+
+.footer-time .third{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.footer-opening{
+    margin-top: 2.4rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom: 1px solid;
+
+}
+
+.footer-some-icons{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footer-some-icons img{
+    margin: 1.3rem;
+}
+
+footer h2{
+    padding-block: 0.5rem;
+}
+
+footer p{
+    font-size: 1.1rem;
+    line-height: 2.4;
+    font-style: italic;
+    color: var(--light-text);
+}
+
+.pris{
+    text-decoration: none;
+    color: var(--light-text);
+    background-color: var(--light-green);
+    font-size: 1.15rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-left: 3.1rem;
+    padding-right: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-bottom-left-radius: 60px;
+}
+
+/* ------ MEDIA QUERY ------ */
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 744px) {
+    
+    /* ------ Tablet-Nav ------ */
+    
+    .nav-logo{
+        width: 12.5rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    .top-bar-flag{
+        margin-right: 2rem;
+        width: 3rem;
+    }
+    
+    .a-flag-mobile img{
+        margin-right: 2rem;
+        width: 3rem;
+    }
+    
+    .fas{
+        font-size: 2.6rem;
+        line-height: 45px;
+        float: right;
+        padding-right: 1rem;    
+    }
+
+    /* ---- Tablet-Burger-Dropdown ---- */
+    
+    .dropdown-content a {
+        font-size: 1.3rem;
+        padding-top: 1.5rem;
+        padding-left: 0;
+    }
+    .dropdown-content{
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+    li.mobile-sub-page a{
+        font-size: 1.2rem;
+    }
+    .dropdown-content p {
+        font-size: 1.3rem;
+    }
+    /* ----- Styling af content ----- */
+    .header-big{
+        font-size: 7rem;
+        top: 33%;
+    }
+    .header-small{
+        top: 45%;
+        font-size: 1.6rem;
+    }
+
+    /*Åbningstider*/
+    
+
+    /* Tablet-Footer */
+    .footer-some-icons{
+        display: flex;
+        place-self: center;
+        column-gap: 3rem;
+        padding-top: 0rem;
+    }
+
+    .footer-opening{
+        font-size: 1.6rem;
+    }
+
+    footer h2{
+        font-size: 1.6rem;
+    }
+
+    footer p{
+        font-size: 1.3rem;
+    }
+
+    .opening-flex {
+        justify-content:start;
+        gap: 4rem;
+    }
+    .index-opening{
+        padding-left:5rem;
+    }
+
+    /*Herunder styles på alle fontene, så de bliver forstørret, samt lidt padding på sektionerne*/
+    .index-gridcontainer p{
+        font-size: 1.2em;
+    }
+    .index-gridcontainer h3{
+        font-size: 1.6em;
+    }
+    .index-gridcontainer h4{
+        font-size: 1.3em;
+    }
+    .index-gridcontainer section{
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        height: 50vh;
+    }
+    .index-gridcontainer .index-opening, .index-gridcontainer .index-findus{
+        height: 35vh;
+    }
+    .index-gridcontainer .index-opening{
+        padding-left:4rem;
+    }
+    
+}
+
+/* Media Query for Web */
+@media only screen and (min-width: 1150px) {
+    
+    /* ------ Web Nav ------ */
+    .nav-logo{
+        width: 10rem;
+        height: auto;
+        align-items: center;
+    }
+    
+    .web-nav {
+        display: flex;
+        height: 7rem;
+    }
+
+    .web-nav a{
+        font-size: 1.5rem;
+        font-family: var(--sans-serif-regular);
+        font-style: italic;
+    }
+    .nav-links{
+        display: flex;
+        width: 55vw;
+        justify-content: space-evenly;
+    }
+    nav ul{
+        max-height: none;
+    }
+    .nav-link{
+        display: flex;
+        align-items: center;
+        width: 32vw;
+        justify-content: space-evenly;
+    }
+
+    .subnav{
+        max-height: none;
+    }
+    .info-sub-nav{
+        margin-top: 17rem;
+    }
+
+    .subnav .subnavbtn {
+        font-size: 1.5rem;
+        font-family: var(--sans-serif-regular);
+        font-style: italic;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .nav-logo{
+        width: 17rem;
+        height: auto;
+        align-items: center;
+    }
+
+    .top-bar {
+        width: 22rem;
+        height: 3.5rem;
+        margin-top: -3.5rem;
+        border-bottom-left-radius: 60px;
+        border: solid 1px var(--dark-brown);
+        border-top: 0px;
+        border-right: 0px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-flag-a img{
+        margin: 0.9rem;
+        width: 2.2rem;
+        height: auto;
+    }
+
+    .top-bar-flag img{
+        margin: 0.9rem;
+        width: 2.2rem;
+        height: auto;
+    }
+
+    .top-bar p{
+        font-family: var(--sans-serif);
+        color: var(--dark-brown);
+        font-size: 1.2rem;
+    }
+    
+    .top-bar div{
+        height: 1.5rem;
+        width: 1px;
+        background-color: black;
+        margin-left: 1rem;
+        margin-right: 0.8rem;
+    }
+
+    /* ----- Her begynder Content -----*/
+
+    /*Styling af header med titel*/
+    header img{
+        margin-top:auto;
+        height: 55vh;
+        object-fit: cover;
+    }
+   
+    .header-big{
+        font-size: 8rem;
+        top: 33%;
+    }
+    .header-small{
+        top: 44%;
+        font-size: 1.9rem;
+    }
+    .index-gridcontainer img{
+        width: 50vw;
+        height: 70vh;
+    }
+    .index-gridcontainer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 35rem 50rem 50rem 50rem 50rem 50rem;
+    }
+    .index-gridcontainer .index-welcome, .index-gridcontainer .index-opening{
+        height: 35rem;
+    }
+
+    .index-gridcontainer section{
+        height: 50rem;
+    }
+    .opening-flex {
+        justify-content:space-between;
+        gap: 0;
+    }
+    .index-gridcontainer section{
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    
+    /*Se mere knap*/
+    .index-se-mere {
+        font-size: 1.9rem;
+        padding-left: 7rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-right: 4.3rem;
+        margin-top: 0rem;
+        }    
+
+    /* Åbningstider Grid-Box */
+    .index-gridcontainer .index-opening{
+        padding-left:0rem;
+    }
+    .index-opening{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-color: var(--grey);
+        height: 100%;
+        padding-left: 0rem;
+        padding-right: 1.2rem;
+    }
+
+    .index-opening h3{
+        color: var(--dark-green);
+        font-size: 1.9rem;
+        padding-top: 2.5rem;
+        margin-left: 4rem;
+    }
+    
+    .index-opening h4{
+        color: var(--light-green);
+        font-size: 1.6rem;
+        padding-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    .opening-flex{
+        justify-content: space-between;
+        padding-right: 6.5rem;
+        padding-left: 3rem;
+    }
+
+    .opening-flex p{
+        font-size: 1.3rem;
+        line-height: 38px;
+        padding-left: 3rem;
+        white-space: nowrap;
+    }
+    
+    .opening-phone {
+        margin-top: 3.2rem;
+        margin-right: 7.5rem;
+    }
+    
+    .opening-phone p{
+        font-size: 1.6rem;
+    }
+    
+    .opening-phone img {
+        height: 2rem;
+        width: auto;
+        margin-right: 0.3rem;
+    }
+    
+    .phone-info {
+        font-size: 1.3rem;
+        margin-right: 2.5rem;
+    }
+
+    .callerlink{
+        font-size: 1.3rem;
+        margin-right: -5rem;
+        color: var(--dark-green);
+        font-family: var(--sans-serif);
+        font-weight: 400;
+    }
+
+    /* Velkommen Grid-Box */
+    .index-welcome{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: var(--light-text);
+        height: 100%;
+    }
+
+    .index-welcome h3{
+        font-size: 1.9rem;
+        padding-top: 2.5rem;
+        margin-left: 8.7rem;
+        color: var(--light-green);
+    }
+    
+    .index-welcome hr{
+        margin-top: 1.1rem;
+        margin-left: 8.75rem;
+        margin-right: 4rem;
+    }
+    
+    .index-welcome p{
+        margin-top: 1.6rem;
+        margin-left: 12.5rem;
+        margin-right: 2rem;
+        font-size: 1.3rem;
+    }
+    
+    .index-welcome-awards{
+        margin-left: 12rem;
+        margin-right: 11rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .index-welcome-awards img {
+        margin-top: 1.6rem;
+        width: 7rem;
+        height: auto;
+    }
+
+    /* [Image] Hvem er vi Grid-Box */
+    .index-aboutus-img{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        height: 100%;
+    }
+
+    .index-aboutus-img img{
+        height: 100%;
+    }
+
+    /* [Text] Hvem er vi Grid-Box */
+    .index-aboutus{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 100%;
+    }
+    
+    .index-aboutus h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
+    }
+    
+    .index-aboutus img{
+        padding-top: 7.4rem;
+        padding-left: 2.4rem;
+        width: 6rem;
+        height: auto;
+    }
+    
+    .index-aboutus hr{
+        margin-top: -0.9rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    
+    .index-aboutus p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* [Image] Restaurant Grid-Box */
+    .index-restaurant-img{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 100%;
+        height: 100%;
+    }
+
+    .index-restaurant-img img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* [Text] Restaurant Grid-Box */
+    .index-restaurant{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: 100%;
+    }
+    
+    .index-restaurant h3{
+        padding-top: 9.5rem;
+        font-size: 1.9rem;
+        margin-left: 8.9rem;
+    }
+    
+    .index-restaurant img{
+        padding-top: 8.5rem;
+        padding-left: 1.4rem;
+        width: 6rem;
+        height: auto;
+    }
+    
+    .index-restaurant hr{
+        margin-left: 9em;
+        margin-right: 4.2em;
+        margin-bottom: 1.4rem;
+    }
+    
+    .index-restaurant p{
+        padding-left: 12.5rem;
+        padding-right: 5rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* [Image] Værelser Grid-Box */
+    .index-vaerelser-img{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .index-vaerelser-img img{
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* [Text] Værelser Grid-Box */
+    .index-vaerelser{
+        grid-column: 2/3;
+        grid-row: 4/5;
+        height: 100%;
+    }
+
+    .index-vaerelser h3{
+        font-size: 1.9rem;
+        padding-top: 12rem;
+        margin-left: 4.2rem;
+    }
+    
+    .index-vaerelser img{
+        padding-top: 12.5rem;
+        padding-left: 2.3rem;
+        width: 6rem;
+        height: auto;
+    }
+    
+    .index-vaerelser hr{
+        margin-left: 4.4em;
+        margin-right: 9em;
+        margin-bottom: 2rem;
+    }
+    
+    .index-vaerelser p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .index-vaerelser-margin-right {
+        margin-right: 9rem;
+    }
+
+    /* [Image] Selskaber Grid-Box */
+    .index-selskaber-img{
+        grid-column: 2/3;
+        grid-row: 5/6;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .index-selskaber-img img{
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+
+    /* [Text] Selskaber Grid-Box */
+    .index-selskaber{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        height: 100%;
+    }
+
+    .index-selskaber h3{
+        padding-top: 11.5rem;
+        font-size: 1.9rem;
+        margin-left: 8.9rem;
+    }
+    
+    .index-selskaber img{
+        padding-top: 8.5rem;
+        padding-left: 1.4rem;
+        width: 6rem;
+        height: auto;
+    }
+    
+    .index-selskaber hr{
+        margin-left: 9em;
+        margin-right: 4.2em;
+        margin-bottom: 1.4rem;
+    }
+    
+    .index-selskaber p{
+        padding-left: 12.5rem;
+        padding-right: 5rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* Find Vej + Flag Grid-Box */
+    .index-web-paralax{
+        grid-column: 1/3;
+        grid-row: 6/7;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        background-color: var(--light-text);
+        padding-right: 4rem;
+    }
+
+    /*Find Vej - Kort*/
+    #gmap_canvas {
+        width: 55rem;
+        height: 35rem;
+        margin-top: 7rem;
+        margin-left: 3rem;
+        }
+
+    /* [Text] Find Vej Grid-Box */
+    .index-findus{
+        background-color: var(--light-text);
+        height: 100%;
+    }
+    
+    .index-findus h3{
+        padding-top: 6.8rem;
+        font-size: 1.9rem;
+        margin-left: 8rem;
+    }
+    
+    .index-findus img{
+        padding-top: 7rem;
+        padding-left: 2.5rem;
+        width: 6rem;
+        height: auto;
+    }
+    
+    .index-findus hr{
+        margin-top: -0.5rem;
+        margin-left: 8em;
+        margin-right: 2em;
+        margin-bottom: 2rem;
+    }
+    
+    .index-findus p{
+        font-size: 1.3rem;
+        margin-left: 9rem;
+        line-height: 2;
+        color: var(--dark-brown);
+    }
+
+    .index-thirteen{
+        grid-column: 1/3;
+        grid-row: 7/8;
+    }
+
+    .vis-vej-knap {
+        margin-top: 2rem;
+        margin-right: 0;
+    }
+
+    /* Footer */
+    .footer-contact{
+        display: grid;
+        grid-template-columns: 20vw 20vw auto 10vw;
+        grid-template-rows: 20vw;
+        column-gap: 7rem;
+        height: fit-content;
+    }
+    .footer-time{
+        grid-template-rows: 2.4rem;
+    }
+
+    .first{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .second{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    .footer-contact .footer-time{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        margin-top: 2rem;
+    }
+
+    .footer-opening{
+        margin: 0;
+    }
+    .footer-underscore{
+        padding: 0;
+    }
+
+    .third{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    div.footer-some-icons{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 4;
+        grid-column-end: 4;
+        display: grid;
+
+    }
+
+    .third-rest{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    footer h2{
+        margin-top: 2rem;
+    }
+
+
+}
+
+
+/* Her retter vi i navbaren så den ikke presser tingene sammen */
+@media only screen and (min-width: 1650px) {
+    
+    .web-nav a{
+        font-size: 1.8rem;
+    }
+
+    .subnav .subnavbtn {
+        font-size: 1.8rem;
+    }
+    /* Aktiverer Top-bar med telefon-nummer og sprog */
+    .top-bar {
+        display: flex;
+    }
+    /* Skjuler only-flags div */
+    .only-flags {
+        display: none;
+    }
+}
